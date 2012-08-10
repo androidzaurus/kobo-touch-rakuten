@@ -1,0 +1,445 @@
+6>TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+LPMode driver module loaded
+Static Power Management for Freescale i.MX5
+PM driver module loaded
+sdram autogating driver module loaded
+busfreq_probe: failed to get lp regulator
+Bus freq driver module loaded
+mxc_dvfs_core_probe
+DVFS driver module loaded
+i.MXC CPU frequency driver
+DVFS PER driver module loaded
+msgmni has been set to 496
+alg: No test for stdrng (krng)
+cryptodev: driver loaded.
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: MXC Internal UART driver
+mxcintuart.0: ttymxc0 at MMIO 0x53fc0000 (irq = 32) is a Freescale i.MX
+console [ttymxc0] enabled, bootconsole disabled
+mxcintuart.1: ttymxc1 at MMIO 0x53fbc000 (irq = 31) is a Freescale i.MX
+mxcintuart.2: ttymxc2 at MMIO 0x5000c000 (irq = 33) is a Freescale i.MX
+loop: module loaded
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[msp_int-1142] MSP430 interrupt triggered !!!
+[arch/arm/plat-mxc/usb_common.c-343] usbh1_set_utmi_xcvr() 
+fsl-ehci fsl-ehci.1: Freescale On-Chip EHCI Host Controller
+fsl-ehci fsl-ehci.1: new USB bus registered, assigned bus number 1
+fsl-ehci fsl-ehci.1: irq 14, io base 0x53f80200
+fsl-ehci fsl-ehci.1: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+MXC keypad loaded
+input: mxckpd as /devices/virtual/input/input0
+input: zForce-ir-touch as /devices/virtual/input/input1
+[zForce_ir_touch_recv_data-116] command Activate (0) ...
+mc13892 rtc probe start
+pmic_rtc pmic_rtc.1: rtc core: registered pmic_rtc as rtc0
+mc13892 rtc probe succeed
+i2c /dev entries driver
+[zForce_ir_touch_recv_data-121] command Resolution (0) ...
+APM Battery Driver
+MXC WatchDog Driver 2.0
+[zForce_ir_touch_recv_data-134] command Frequency (0) ...
+[drivers/mxc/pmic/mc13892/pmic_battery.c-991] pmic_battery_probe...
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+mxsdhci: MXC Secure Digital Host Controller Interface driver
+mxsdhci: MXC SDHCI Controller Driver. 
+mmc0: SDHCI detect irq 0 irq 1 INTERNAL DMA
+mxsdhci: MXC SDHCI Controller Driver. 
+mmc1: SDHCI detect irq 273 irq 2 INTERNAL DMA
+mxsdhci: MXC SDHCI Controller Driver. 
+mmc2: SDHCI detect irq 0 irq 3 INTERNAL DMA
+Registered led device: pmic_ledsr
+Registered led device: pmic_ledsg
+Registered led device: pmic_ledsb
+TCP cubic registered
+NET: Registered protocol family 17
+VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 2
+waveform_size_setup() wf_size=1013248
+***_MemoryRequest:165: request memory region! addr=0x7ff08800, len=1013248***
+waveform_p_setup() wf_p=7ff08800,vaddr=90200800,size=1013248
+Console: switching to colour frame buffer device 100x37
+[epdc_firmware_func]:fw p=90200800,size=1013248
+epdc_init_sequence(994) : epd_power_on request fail !
+pmic_rtc pmic_rtc.1: setting system clock to 2011-08-01 01:40:07 UTC (1312162807)
+Waiting for root device /dev/mmcblk0p1...
+mmc0: new high speed SDHC card at address fe28
+mmcblk0: mmc0:fe28 SU04G 3.69 GiB 
+ mmcblk0: p1 p2 p3
+EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 179:1.
+Freeing init memory: 112K
+EXT4-fs (mmcblk0p1): re-mounted. Opts: (null)
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+S1D13522 regiseter 10(0xa) not support !
+
+==== [pvi_ioctl_Reset] 0x0a=0x0000====
+fake_s1d13522_parse_epd_cmdline : epd cmdline parse already done .
+client0 ,addr=0x48,name=lm75-1
+[PROGRESS_BAR-2654] No progess ...
+lm75 temprature data = 0x19c0,25
+FAT: utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
+DVFS is started
+ARC USBOTG Device Controller driver (1 August 2005)
+g_ether gadget: using random self ethernet address
+g_ether gadget: using random host ethernet address
+usb0: MAC ae:5b:c8:39:90:75
+usb0: HOST MAC ee:e5:c5:6c:aa:92
+g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+g_ether gadget: g_ether ready
+dr_controller_run: udc enter low power mode 
+fsl-usb2-udc: bind to driver g_ether 
+ehci_fsl_bus_suspend, Host 1
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+usb unplugged
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[drivers/input/touchscreen/zforce_i2c.c-301] zforce_i2c_open()
+[zForce_ir_touch_recv_data-116] command Activate (0) ...
+[zForce_ir_touch_recv_data-121] command Resolution (0) ...
+[zForce_ir_touch_recv_data-121] command Resolution (0) ...
+[zForce_ir_touch_recv_data-134] command Frequency (0) ...
+[ntx_get_battery_vol-1113] 70
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+lit_ctl
+command exec successfully!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 70
+[mxc_rtc_set_alarm-313] alarm 840
+Waiting arm_podf enabled!
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x0808 ....
+PM: Preparing system for mem sleep
+Freezing user space processes ... freeze 1!!!!!!!!!!!!!!!!!!!!
+(elapsed 0.01 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+PM: Entering mem sleep
+Suspending console(s) (use no_console_suspend to debug)
+USB Host suspend begins
+ehci_fsl_drv_suspend, pm event 
+udc suspend begins
+USB Gadget suspend ends
+[sdhci_suspend-1755] skip suspend for mmc1
+DVFS is stopped
+PM: suspend of devices complete after 3.300 msecs
+suspend wp cpu=800000000
+PM: late suspend of devices complete after 0.182 msecs
+PM: early resume of devices complete after 0.114 msecs
+DVFS is started
+[msp_int-1142] MSP430 interrupt triggered !!!
+usb plugged 1-0
+power_supply mc13892_charger: charger status: online
+[sdhci_resume-1792] skip resume for mmc1
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+dr_controller_run: udc out low power mode
+USB Gadget resume ends
+ehci fsl drv resume begins: Host 1
+ehci_fsl_drv_resume,pm event, wait for wakeup irq if needed
+ehci_fsl_bus_resume, Host 1
+[ntx_get_battery_vol-1113] 70
+[ntx_get_battery_vol-1113] 70
+PM: resume of devices complete after 397.995 msecs
+PM: Finishing wakeup.
+Restarting tasks ... done.
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x0804 ....
+[ntx_get_battery_vol-1113] 70
+lm75 temprature data = 0x1a20,26
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+g_ether gadget: high speed config #1: CDC Ethernet (ECM)
+ehci_fsl_bus_suspend, Host 1
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+[ntx_get_battery_vol-1113] 88
+lm75 temprature data = 0x1b20,27
+[ntx_get_battery_vol-1113] 88
+try_wake_up_udc: udc enter low power mode
+usb unplugged
+power_supply mc13892_charger: charger status: offline
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[msp_int-1142] MSP430 interrupt triggered !!!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[mxc_rtc_set_alarm-313] alarm 780
+Waiting arm_podf enabled!
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x4808 ....
+PM: Preparing system for mem sleep
+Freezing user space processes ... freeze 1!!!!!!!!!!!!!!!!!!!!
+(elapsed 0.01 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+PM: Entering mem sleep
+Suspending console(s) (use no_console_suspend to debug)
+USB Host suspend begins
+ehci_fsl_drv_suspend, pm event 
+udc suspend begins
+USB Gadget suspend ends
+[sdhci_suspend-1755] skip suspend for mmc1
+DVFS is stopped
+PM: suspend of devices complete after 3.295 msecs
+suspend wp cpu=800000000
+PM: late suspend of devices complete after 0.181 msecs
+PM: early resume of devices complete after 0.114 msecs
+DVFS is started
+[sdhci_resume-1792] skip resume for mmc1
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+dr_controller_run: udc enter low power mode 
+USB Gadget resume ends
+ehci fsl drv resume begins: Host 1
+ehci_fsl_drv_resume,pm event, wait for wakeup irq if needed
+ehci_fsl_bus_resume, Host 1
+PM: resume of devices complete after 197.897 msecs
+PM: Finishing wakeup.
+Restarting tasks ... done.
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x4808 ....
+[ntx_get_battery_vol-1113] 90
+lm75 temprature data = 0x1aa0,26
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+pvi_io : do not get the command [241]
+ehci_fsl_bus_suspend, Host 1
+Waiting arm_podf enabled!
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x4808 ....
+PM: Preparing system for mem sleep
+Freezing user space processes ... freeze 1!!!!!!!!!!!!!!!!!!!!
+(elapsed 0.01 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+PM: Entering mem sleep
+Suspending console(s) (use no_console_suspend to debug)
+[zForce_ir_touch_recv_data-113] command Deactivate ...
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+USB Host suspend begins
+ehci_fsl_drv_suspend, pm event 
+udc suspend begins
+USB Gadget suspend ends
+[sdhci_suspend-1755] skip suspend for mmc1
+Waiting arm_podf enabled!
+DVFS is stopped
+PM: suspend of devices complete after 211.730 msecs
+suspend wp cpu=800000000
+PM: late suspend of devices complete after 0.187 msecs
+PM: early resume of devices complete after 0.117 msecs
+DVFS is started
+[sdhci_resume-1792] skip resume for mmc1
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+dr_controller_run: udc enter low power mode 
+USB Gadget resume ends
+ehci fsl drv resume begins: Host 1
+ehci_fsl_drv_resume,pm event, wait for wakeup irq if needed
+ehci_fsl_bus_resume, Host 1
+[zForce_ir_touch_recv_data-116] command Activate (0) ...
+[zForce_ir_touch_recv_data-121] command Resolution (0) ...
+[zForce_ir_touch_recv_data-134] command Frequency (0) ...
+PM: resume of devices complete after 199.447 msecs
+PM: Finishing wakeup.
+Restarting tasks ... done.
+[mxc_rtc_ioctl-106] Micro P MSP430 status 0x4808 ....
+[ntx_get_battery_vol-1113] 83
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+lm75 temprature data = 0x1ba0,27
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+ehci_fsl_bus_suspend, Host 1
+usb wakeup is here
+the otgsc is 0x82c0f20, usbsts is 0x80, portsc is 0x1c000004, wakeup_irq is 0x80000000
+otg udc vbus rising wakeup
+try_wake_up_udc: udc out low power mode
+[msp_int-1142] MSP430 interrupt triggered !!!
+usb plugged 1-0
+power_supply mc13892_charger: charger status: online
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+g_ether gadget: high speed config #1: CDC Ethernet (ECM)
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 83
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 83
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 83
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 84
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+mmc1: new SD card at address aaaa
+mmcblk1: mmc1:aaaa SU02G 1.84 GiB 
+ mmcblk1: p1
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+mmc1: Card removed and resetting controller.
+mmc1: Card removed and resetting controller.
+mmc1: card aaaa removed
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+mmc1: new SD card at address aaaa
+mmcblk1: mmc1:aaaa SU02G 1.84 GiB 
+ mmcblk1: p1
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+Waiting arm_podf enabled!
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 85
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86
+[ntx_get_battery_vol-1113] 86

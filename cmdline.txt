@@ -1,0 +1,1 @@
+console=ttymxc0,115200 rootwait rw quiet lpj=3997696 root=/dev/mmcblk0p1 rootfstype=ext4 hwcfg_p=0x7ffffe00 hwcfg_sz=512 waveform_p=0x7ff08800 waveform_sz=1013248 mem=255M

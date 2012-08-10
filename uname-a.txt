@@ -1,0 +1,1 @@
+Linux (none) 2.6.35.3-850-gbc67621+ #325 PREEMPT Wed May 23 09:35:44 CST 2012 armv7l GNU/Linux

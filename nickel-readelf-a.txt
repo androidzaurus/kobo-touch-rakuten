@@ -1,0 +1,2120 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x122c8
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          4248544 (bytes into file)
+  Flags:                             0x5000002, has entry point, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         28
+  Section header string table index: 27
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00008134 000134 000013 00   A  0   0  1
+  [ 2] .note.ABI-tag     NOTE            00008148 000148 000020 00   A  0   0  4
+  [ 3] .hash             HASH            00008168 000168 001898 04   A  4   0  4
+  [ 4] .dynsym           DYNSYM          00009a00 001a00 002330 10   A  5   1  4
+  [ 5] .dynstr           STRTAB          0000bd30 003d30 004b44 00   A  0   0  1
+  [ 6] .gnu.version      VERSYM          00010874 008874 000466 02   A  4   0  2
+  [ 7] .gnu.version_r    VERNEED         00010cdc 008cdc 0000a0 00   A  5   4  4
+  [ 8] .rel.dyn          REL             00010d7c 008d7c 0001a0 08   A  4   0  4
+  [ 9] .rel.plt          REL             00010f1c 008f1c 0007d0 08   A  4  11  4
+  [10] .init             PROGBITS        000116ec 0096ec 00000c 00  AX  0   0  4
+  [11] .plt              PROGBITS        000116f8 0096f8 000bcc 04  AX  0   0  4
+  [12] .text             PROGBITS        000122c8 00a2c8 021488 00  AX  0   0  8
+  [13] .fini             PROGBITS        00033750 02b750 000008 00  AX  0   0  4
+  [14] .rodata           PROGBITS        00033758 02b758 3d8ee8 00   A  0   0  8
+  [15] .ARM.extab        PROGBITS        0040c640 404640 006a6c 00   A  0   0  4
+  [16] .ARM.exidx        ARM_EXIDX       004130ac 40b0ac 000628 00  AL 12   0  4
+  [17] .init_array       INIT_ARRAY      0041c000 40c000 000010 00  WA  0   0  4
+  [18] .fini_array       FINI_ARRAY      0041c010 40c010 000004 00  WA  0   0  4
+  [19] .jcr              PROGBITS        0041c014 40c014 000004 00  WA  0   0  4
+  [20] .data.rel.ro      PROGBITS        0041c018 40c018 000510 00  WA  0   0  8
+  [21] .dynamic          DYNAMIC         0041c528 40c528 0001a8 08  WA  5   0  4
+  [22] .got              PROGBITS        0041c6d0 40c6d0 000468 04  WA  0   0  4
+  [23] .data             PROGBITS        0041cb38 40cb38 000480 00  WA  0   0  4
+  [24] .bss              NOBITS          0041cfb8 40cfb8 002ee4 00  WA  0   0  8
+  [25] .ARM.attributes   ARM_ATTRIBUTES  00000000 40cfb8 00002f 00      0   0  1
+  [26] .comment          PROGBITS        00000000 40cfe7 000306 00      0   0  1
+  [27] .shstrtab         STRTAB          00000000 40d2ed 0000f1 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x40b0ac 0x004130ac 0x004130ac 0x00628 0x00628 R   0x4
+  PHDR           0x000034 0x00008034 0x00008034 0x00100 0x00100 R E 0x4
+  INTERP         0x000134 0x00008134 0x00008134 0x00013 0x00013 R   0x1
+      [Requesting program interpreter: /lib/ld-linux.so.3]
+  LOAD           0x000000 0x00008000 0x00008000 0x40b6d4 0x40b6d4 R E 0x8000
+  LOAD           0x40c000 0x0041c000 0x0041c000 0x00fb8 0x03e9c RW  0x8000
+  DYNAMIC        0x40c528 0x0041c528 0x0041c528 0x001a8 0x001a8 RW  0x4
+  NOTE           0x000148 0x00008148 0x00008148 0x00020 0x00020 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     
+   02     .interp 
+   03     .interp .note.ABI-tag .hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .ARM.extab .ARM.exidx 
+   04     .init_array .fini_array .jcr .data.rel.ro .dynamic .got .data .bss 
+   05     .dynamic 
+   06     .note.ABI-tag 
+   07     
+
+Dynamic section at offset 0x40c528 contains 48 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libqca.so]
+ 0x00000001 (NEEDED)                     Shared library: [libQtSolutions_IOCompressor-2.3.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libzip.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libxml2.so.2]
+ 0x00000001 (NEEDED)                     Shared library: [libnickel.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libssl.so.0.9.8]
+ 0x00000001 (NEEDED)                     Shared library: [libts-1.0.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libQtWebKit.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtScript.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtSql.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtXml.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtGui.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtNetwork.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtCore.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [librt.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libfreetype.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libpng12.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libicuuc.so.46]
+ 0x00000001 (NEEDED)                     Shared library: [libicudata.so.46]
+ 0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x0000000f (RPATH)                      Library rpath: [/chroot/lib:/chroot/usr/lib:/usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib]
+ 0x0000000c (INIT)                       0x116ec
+ 0x0000000d (FINI)                       0x33750
+ 0x00000019 (INIT_ARRAY)                 0x41c000
+ 0x0000001b (INIT_ARRAYSZ)               16 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x41c010
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x00000004 (HASH)                       0x8168
+ 0x00000005 (STRTAB)                     0xbd30
+ 0x00000006 (SYMTAB)                     0x9a00
+ 0x0000000a (STRSZ)                      19268 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000015 (DEBUG)                      0x0
+ 0x00000003 (PLTGOT)                     0x41c6d0
+ 0x00000002 (PLTRELSZ)                   2000 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x10f1c
+ 0x00000011 (REL)                        0x10d7c
+ 0x00000012 (RELSZ)                      416 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffe (VERNEED)                    0x10cdc
+ 0x6fffffff (VERNEEDNUM)                 4
+ 0x6ffffff0 (VERSYM)                     0x10874
+ 0x00000000 (NULL)                       0x0
+
+Relocation section '.rel.dyn' at offset 0x8d7c contains 52 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+0041cac4  00006515 R_ARM_GLOB_DAT    00000000   _ZNSs4_Rep20_S_empty_r
+0041cac8  00007615 R_ARM_GLOB_DAT    0041c248   _ZN21iMX508KeyboardHan
+0041cacc  00007b15 R_ARM_GLOB_DAT    0041c018   _ZTV24iMX508ScreenDriv
+0041cad0  00008915 R_ARM_GLOB_DAT    0041c098   _ZTV12iMX508Screen
+0041cad4  00009b15 R_ARM_GLOB_DAT    0041c2e0   _ZTV31AbstractBlocking
+0041cad8  00009f15 R_ARM_GLOB_DAT    00030f00   _ZN5QHashIi15QHashDumm
+0041cadc  0000a915 R_ARM_GLOB_DAT    00000000   __gmon_start__
+0041cae0  0000ae15 R_ARM_GLOB_DAT    0041c088   _ZN12iMX508Screen16sta
+0041cae4  0000bb15 R_ARM_GLOB_DAT    00000000   _ZN9QHashData11shared_
+0041cae8  0000bd15 R_ARM_GLOB_DAT    0041c1d8   _ZTV26iMX508KeyboardDr
+0041caec  0000c815 R_ARM_GLOB_DAT    0041c440   _ZTV18TslibActualHandl
+0041caf0  0000ce15 R_ARM_GLOB_DAT    00000000   qt_screen
+0041caf4  0000ed15 R_ARM_GLOB_DAT    00000000   _ZTISt9bad_alloc
+0041caf8  00010315 R_ARM_GLOB_DAT    0041c3e0   _ZTV20TslibDispatchHan
+0041cafc  00010d15 R_ARM_GLOB_DAT    0041c4a0   _ZTV12TslibHandler
+0041cb00  00013115 R_ARM_GLOB_DAT    0041c2d0   _ZN31AbstractBlockingK
+0041cb04  00013715 R_ARM_GLOB_DAT    0041c490   _ZN12TslibHandler16sta
+0041cb08  00014015 R_ARM_GLOB_DAT    0041c1c8   _ZN26iMX508KeyboardDri
+0041cb0c  00014815 R_ARM_GLOB_DAT    0002aaa8   _ZN8QPointerI7QObjectE
+0041cb10  0001a115 R_ARM_GLOB_DAT    0041d17c   _ZN7QString11shared_nu
+0041d17c  0001a114 R_ARM_COPY        0041d17c   _ZN7QString11shared_nu
+0041cb14  0001a515 R_ARM_GLOB_DAT    00000000   pthread_cancel
+0041cb18  0001ac15 R_ARM_GLOB_DAT    0041c3d0   _ZN20TslibDispatchHand
+0041cb1c  0001ca15 R_ARM_GLOB_DAT    00000000   _ZN7QString16codecForC
+0041cb24  0001eb15 R_ARM_GLOB_DAT    00030f68   _ZN5QHashIi15QHashDumm
+0041cb28  0001ff15 R_ARM_GLOB_DAT    0041c258   _ZTV21iMX508KeyboardHa
+0041cb2c  00021715 R_ARM_GLOB_DAT    0041d268   _ZN9QListData11shared_
+0041d268  00021714 R_ARM_COPY        0041d268   _ZN9QListData11shared_
+0041cb30  00022b15 R_ARM_GLOB_DAT    0041c430   _ZN18TslibActualHandle
+0041cb34  00023215 R_ARM_GLOB_DAT    0041c360   _ZTV17TslibDriverPlugi
+0041cfb8  00002c14 R_ARM_COPY        0041cfb8   _ZTV7Content
+0041cfe0  00002d14 R_ARM_COPY        0041cfe0   _ZTV10ContentKey
+0041d000  00005e14 R_ARM_COPY        0041d000   _ZTVN10__cxxabiv121__v
+0041d030  00008a14 R_ARM_COPY        0041d030   _ZTI18QWSKeyboardHandl
+0041d038  00009e14 R_ARM_COPY        0041d038   _ZTVN10__cxxabiv117__c
+0041d068  0000c214 R_ARM_COPY        0041d068   _ZTV8Bookmark
+0041d088  0000d014 R_ARM_COPY        0041d088   _ZTI19QScreenDriverPlu
+0041d0a8  0000d414 R_ARM_COPY        0041d0a8   _ZTV11Publication
+0041d0c8  00010914 R_ARM_COPY        0041d0c8   _ZTV6Volume
+0041d0d8  00010e14 R_ARM_COPY        0041d0d8   _ZTV4User
+0041d0f8  00010f14 R_ARM_COPY        0041d0f8   _ZN7QObject16staticMet
+0041d108  00011814 R_ARM_COPY        0041d108   _ZTI7QObject
+0041d110  00011f14 R_ARM_COPY        0041d110   _ZTI14QLinuxFbScreen
+0041d120  00013314 R_ARM_COPY        0041d120   _ZTI15QWSMouseHandler
+0041d128  00017814 R_ARM_COPY        0041d128   _ZTVN10__cxxabiv120__s
+0041d158  00018714 R_ARM_COPY        0041d158   _ZTV16VolumeShortcover
+0041d190  0001a414 R_ARM_COPY        0041d190   _ZN8QMapData11shared_n
+0041d1d8  0001ab14 R_ARM_COPY        0041d1d8   _ZTV11GAEventType
+0041d1f0  0001be14 R_ARM_COPY        0041d1f0   _ZTI18QMouseDriverPlug
+0041d210  0001dd14 R_ARM_COPY        0041d210   _ZTV10Shortcover
+0041d238  00020814 R_ARM_COPY        0041d238   _ZN16QKbdDriverPlugin1
+0041d248  00020914 R_ARM_COPY        0041d248   _ZTI16QKbdDriverPlugin
+
+Relocation section '.rel.plt' at offset 0x8f1c contains 250 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+0041c6dc  00000a16 R_ARM_JUMP_SLOT   0001170c   _ZN8ScObjectD2Ev
+0041c6e0  00000c16 R_ARM_JUMP_SLOT   00011718   _ZN18QMouseDriverPlugi
+0041c6e4  00000f16 R_ARM_JUMP_SLOT   00011724   _ZNK7QScreen11mapToDev
+0041c6e8  00001216 R_ARM_JUMP_SLOT   00011730   _ZNK7QScreen11mapToDev
+0041c6ec  00001316 R_ARM_JUMP_SLOT   0001173c   ts_open
+0041c6f0  00001716 R_ARM_JUMP_SLOT   00011748   __cxa_begin_catch
+0041c6f4  00001b16 R_ARM_JUMP_SLOT   00011754   ts_config
+0041c6f8  00001d16 R_ARM_JUMP_SLOT   00011760   _ZN7QThread4quitEv
+0041c6fc  00001e16 R_ARM_JUMP_SLOT   0001176c   _ZN7QRegionC1Ev
+0041c700  00001f16 R_ARM_JUMP_SLOT   00011778   _ZNK7QRegion12bounding
+0041c704  00002116 R_ARM_JUMP_SLOT   00011784   _ZN8QMapData10createDa
+0041c708  00002216 R_ARM_JUMP_SLOT   00011790   _ZN11QVectorData10real
+0041c70c  00002316 R_ARM_JUMP_SLOT   0001179c   backtrace_symbols
+0041c710  00002516 R_ARM_JUMP_SLOT   000117a8   _Z23qUnregisterResourc
+0041c714  00002716 R_ARM_JUMP_SLOT   000117b4   _ZN9QHashData8nextNode
+0041c718  00002e16 R_ARM_JUMP_SLOT   000117c0   _ZN11EventEngine12addC
+0041c71c  00003116 R_ARM_JUMP_SLOT   000117cc   _ZN11QTextStreamlsERK7
+0041c720  00003316 R_ARM_JUMP_SLOT   000117d8   _ZN10QByteArray7reallo
+0041c724  00003616 R_ARM_JUMP_SLOT   000117e4   _ZN9AffiliateD1Ev
+0041c728  00003816 R_ARM_JUMP_SLOT   000117f0   _ZN8QMapData11node_cre
+0041c72c  00003a16 R_ARM_JUMP_SLOT   000117fc   _ZN19QScreenDriverPlug
+0041c730  00003b16 R_ARM_JUMP_SLOT   00011808   __aeabi_idivmod
+0041c734  00003d16 R_ARM_JUMP_SLOT   00011814   _ZN8QMapData11node_del
+0041c738  00004016 R_ARM_JUMP_SLOT   00011820   sleep
+0041c73c  00004716 R_ARM_JUMP_SLOT   0001182c   _ZN7QRegExp3capEi
+0041c740  00004916 R_ARM_JUMP_SLOT   00011838   _Zls6QDebugRK5QRect
+0041c744  00004b16 R_ARM_JUMP_SLOT   00011844   sigaction
+0041c748  00005016 R_ARM_JUMP_SLOT   00011850   _ZNK7QScreen11pixmapDe
+0041c74c  00005216 R_ARM_JUMP_SLOT   0001185c   _ZN8QMapData16continue
+0041c750  00005316 R_ARM_JUMP_SLOT   00011868   _ZNK7QScreen13isTransf
+0041c754  00005516 R_ARM_JUMP_SLOT   00011874   _ZN7QRegionC1EiiiiNS_1
+0041c758  00005616 R_ARM_JUMP_SLOT   00011880   _ZN18Nickel3Applicatio
+0041c75c  00006016 R_ARM_JUMP_SLOT   0001188c   _ZN7QScreen4blitERK6QI
+0041c760  00006616 R_ARM_JUMP_SLOT   00011898   _ZN18QWSKeyboardHandle
+0041c764  00006716 R_ARM_JUMP_SLOT   000118a4   _ZN15SocialEventTypeD1
+0041c768  00006916 R_ARM_JUMP_SLOT   000118b0   _ZNK7QScreen6onCardEPK
+0041c76c  00006b16 R_ARM_JUMP_SLOT   000118bc   _ZN7QObject10childEven
+0041c770  00006e16 R_ARM_JUMP_SLOT   000118c8   _ZNK7QString7toUpperEv
+0041c774  00007016 R_ARM_JUMP_SLOT   000118d4   ts_close
+0041c778  00007316 R_ARM_JUMP_SLOT   000118e0   _ZN11QTextStreamC1EP7Q
+0041c77c  00007416 R_ARM_JUMP_SLOT   000118ec   _ZN11GAEventTypeC1Eib7
+0041c780  00007716 R_ARM_JUMP_SLOT   000118f8   _ZNK7QString3argEdiciR
+0041c784  00007d16 R_ARM_JUMP_SLOT   00011904   _ZN11GAEventTypeC1Eib7
+0041c788  00007e16 R_ARM_JUMP_SLOT   00011910   __cxa_demangle
+0041c78c  00007f16 R_ARM_JUMP_SLOT   0001191c   _ZN13ConfigurationD1Ev
+0041c790  00008016 R_ARM_JUMP_SLOT   00011928   ts_fd
+0041c794  00008216 R_ARM_JUMP_SLOT   00011934   _ZN18QWSKeyboardHandle
+0041c798  00008316 R_ARM_JUMP_SLOT   00011940   _ZN18QMouseDriverPlugi
+0041c79c  00008416 R_ARM_JUMP_SLOT   0001194c   _ZN5QFile4openE6QFlags
+0041c7a0  00008516 R_ARM_JUMP_SLOT   00011958   _ZN14QLinuxFbScreen13s
+0041c7a4  00008616 R_ARM_JUMP_SLOT   00011964   _ZN5QFile5closeEv
+0041c7a8  00008716 R_ARM_JUMP_SLOT   00011970   _ZN16QCoreApplication1
+0041c7ac  00008c16 R_ARM_JUMP_SLOT   0001197c   _ZNK7QScreen11mapToDev
+0041c7b0  00008d16 R_ARM_JUMP_SLOT   00011988   _ZN15QWSMouseHandlerC2
+0041c7b4  00008f16 R_ARM_JUMP_SLOT   00011994   _ZN7QObject10timerEven
+0041c7b8  00009116 R_ARM_JUMP_SLOT   000119a0   _ZN14QLinuxFbScreenC2E
+0041c7bc  00009216 R_ARM_JUMP_SLOT   000119ac   strerror
+0041c7c0  00009416 R_ARM_JUMP_SLOT   000119b8   _ZN15SocialEventTypeC1
+0041c7c4  00009516 R_ARM_JUMP_SLOT   000119c4   _ZN11QTextStreamlsEc
+0041c7c8  00009716 R_ARM_JUMP_SLOT   000119d0   _ZN12PowerManager14sha
+0041c7cc  00009816 R_ARM_JUMP_SLOT   000119dc   __cxa_guard_acquire
+0041c7d0  00009a16 R_ARM_JUMP_SLOT   000119e8   _ZN13QNetworkProxyD1Ev
+0041c7d4  0000a116 R_ARM_JUMP_SLOT   000119f4   _ZN7QObject12moveToThr
+0041c7d8  0000a216 R_ARM_JUMP_SLOT   00011a00   _ZNK7QScreen13mapFromD
+0041c7dc  0000a316 R_ARM_JUMP_SLOT   00011a0c   _ZNK7QString7toLowerEv
+0041c7e0  0000a516 R_ARM_JUMP_SLOT   00011a18   _ZNK7QScreen6offsetEv
+0041c7e4  0000a616 R_ARM_JUMP_SLOT   00011a24   _ZN7QObject11customEve
+0041c7e8  0000a816 R_ARM_JUMP_SLOT   00011a30   __libc_start_main
+0041c7ec  0000a916 R_ARM_JUMP_SLOT   00000000   __gmon_start__
+0041c7f0  0000ac16 R_ARM_JUMP_SLOT   00011a48   _ZN10ShortcoverC1Ev
+0041c7f4  0000ad16 R_ARM_JUMP_SLOT   00011a54   _ZN14QLinuxFbScreen10i
+0041c7f8  0000af16 R_ARM_JUMP_SLOT   00011a60   _ZN15QSocketNotifierC1
+0041c7fc  0000b016 R_ARM_JUMP_SLOT   00011a6c   _ZN15HardwareFactory14
+0041c800  0000b216 R_ARM_JUMP_SLOT   00011a78   _ZN14QLinuxFbScreen10d
+0041c804  0000b316 R_ARM_JUMP_SLOT   00011a84   _ZN9Affiliate24instanc
+0041c808  0000b416 R_ARM_JUMP_SLOT   00011a90   __errno_location
+0041c80c  0000b816 R_ARM_JUMP_SLOT   00011a9c   _ZN7QStringC1E5QChar
+0041c810  0000bc16 R_ARM_JUMP_SLOT   00011aa8   _ZN14QLinuxFbScreen7un
+0041c814  0000be16 R_ARM_JUMP_SLOT   00011ab4   _ZN14QLinuxFbScreenD2E
+0041c818  0000c016 R_ARM_JUMP_SLOT   00011ac0   sigemptyset
+0041c81c  0000c316 R_ARM_JUMP_SLOT   00011acc   _ZN7QScreen13resumeUpd
+0041c820  0000c416 R_ARM_JUMP_SLOT   00011ad8   _ZN6IOUtil12fileToStri
+0041c824  0000c516 R_ARM_JUMP_SLOT   00011ae4   _ZNSsC1EPKcjRKSaIcE
+0041c828  0000c716 R_ARM_JUMP_SLOT   00011af0   _ZN6DeviceC1Ev
+0041c82c  0000c916 R_ARM_JUMP_SLOT   00011afc   _ZN5QFileD1Ev
+0041c830  0000cb16 R_ARM_JUMP_SLOT   00011b08   _ZN7QString9fromAsciiE
+0041c834  0000d116 R_ARM_JUMP_SLOT   00011b14   _ZN5QFileC1ERK7QString
+0041c838  0000d216 R_ARM_JUMP_SLOT   00011b20   _ZN19QScreenDriverPlug
+0041c83c  0000d316 R_ARM_JUMP_SLOT   00011b2c   _ZN6IOUtil14makeSystem
+0041c840  0000d516 R_ARM_JUMP_SLOT   00011b38   _ZN11QMetaObject11remo
+0041c844  0000db16 R_ARM_JUMP_SLOT   00011b44   _ZN13QNetworkProxyC1ER
+0041c848  0000dc16 R_ARM_JUMP_SLOT   00011b50   _ZN16QCoreApplication1
+0041c84c  0000dd16 R_ARM_JUMP_SLOT   00011b5c   _ZN7QString16fromAscii
+0041c850  0000de16 R_ARM_JUMP_SLOT   00011b68   _ZN11QTouchEvent10Touc
+0041c854  0000df16 R_ARM_JUMP_SLOT   00011b74   _ZN18Nickel3Applicatio
+0041c858  0000e016 R_ARM_JUMP_SLOT   00011b80   backtrace
+0041c85c  0000e316 R_ARM_JUMP_SLOT   00011b8c   free
+0041c860  0000e416 R_ARM_JUMP_SLOT   00011b98   _ZdlPv
+0041c864  0000e816 R_ARM_JUMP_SLOT   00011ba4   close
+0041c868  0000e916 R_ARM_JUMP_SLOT   00011bb0   _ZN4UserC1Ev
+0041c86c  0000ea16 R_ARM_JUMP_SLOT   00011bbc   _ZN14QLinuxFbScreen15f
+0041c870  0000ee16 R_ARM_JUMP_SLOT   00011bc8   _ZN7QScreen5allocEjjj
+0041c874  0000f116 R_ARM_JUMP_SLOT   00011bd4   _ZNK7QScreen6onCardEPK
+0041c878  0000f216 R_ARM_JUMP_SLOT   00011be0   __cxa_guard_release
+0041c87c  0000f416 R_ARM_JUMP_SLOT   00011bec   _ZN7QObject13connectNo
+0041c880  0000f516 R_ARM_JUMP_SLOT   00011bf8   _ZN8QVariantD1Ev
+0041c884  0000f616 R_ARM_JUMP_SLOT   00011c04   _ZN14QLinuxFbScreen7se
+0041c888  0000f716 R_ARM_JUMP_SLOT   00011c10   _ZN7QScreen12exposeReg
+0041c88c  0000f916 R_ARM_JUMP_SLOT   00011c1c   _Z17qt_message_output9
+0041c890  0000fb16 R_ARM_JUMP_SLOT   00011c28   _Znwj
+0041c894  0000fc16 R_ARM_JUMP_SLOT   00011c34   _ZN6QTimer5startEi
+0041c898  0000fd16 R_ARM_JUMP_SLOT   00011c40   __gxx_personality_v0
+0041c89c  0000ff16 R_ARM_JUMP_SLOT   00011c4c   _ZN9QHashData12allocat
+0041c8a0  00010216 R_ARM_JUMP_SLOT   00011c58   _ZNK9QSettings5valueER
+0041c8a4  00010516 R_ARM_JUMP_SLOT   00011c64   open
+0041c8a8  00010616 R_ARM_JUMP_SLOT   00011c70   _ZN7QThreadC1EP7QObjec
+0041c8ac  00010816 R_ARM_JUMP_SLOT   00011c7c   _ZN7QObjectC2EPS_
+0041c8b0  00010b16 R_ARM_JUMP_SLOT   00011c88   _ZN7QObjectD2Ev
+0041c8b4  00010c16 R_ARM_JUMP_SLOT   00011c94   _ZN6Device16getCurrent
+0041c8b8  00011016 R_ARM_JUMP_SLOT   00011ca0   _ZN16QKbdDriverPluginD
+0041c8bc  00011116 R_ARM_JUMP_SLOT   00011cac   _ZN14QLinuxFbScreen5ca
+0041c8c0  00011516 R_ARM_JUMP_SLOT   00011cb8   _ZN14QLinuxFbScreen12u
+0041c8c4  00011616 R_ARM_JUMP_SLOT   00011cc4   _ZN18MassStorageManage
+0041c8c8  00011716 R_ARM_JUMP_SLOT   00011cd0   _ZNK7QStringeqERKS_
+0041c8cc  00011916 R_ARM_JUMP_SLOT   00011cdc   _ZN14QLinuxFbScreen3se
+0041c8d0  00011b16 R_ARM_JUMP_SLOT   00011ce8   _ZN6VolumeC1Ev
+0041c8d4  00011c16 R_ARM_JUMP_SLOT   00011cf4   _Z5qFreePv
+0041c8d8  00011d16 R_ARM_JUMP_SLOT   00011d00   _ZN11QTextStreamD1Ev
+0041c8dc  00011e16 R_ARM_JUMP_SLOT   00011d0c   _ZN9QListData11detach_
+0041c8e0  00012016 R_ARM_JUMP_SLOT   00011d18   _ZN11QTouchEvent10Touc
+0041c8e4  00012316 R_ARM_JUMP_SLOT   00011d24   _ZN15SocialEventTypeD2
+0041c8e8  00012416 R_ARM_JUMP_SLOT   00011d30   _ZN13ConfigurationC1Ev
+0041c8ec  00012716 R_ARM_JUMP_SLOT   00011d3c   _ZN7ContentD2Ev
+0041c8f0  00012816 R_ARM_JUMP_SLOT   00011d48   _ZN7QObject7connectEPK
+0041c8f4  00012916 R_ARM_JUMP_SLOT   00011d54   _ZNK7QScreen20transfor
+0041c8f8  00012d16 R_ARM_JUMP_SLOT   00011d60   _ZN9QHashData8freeNode
+0041c8fc  00012f16 R_ARM_JUMP_SLOT   00011d6c   _ZN11QTouchEvent10Touc
+0041c900  00013016 R_ARM_JUMP_SLOT   00011d78   _ZN11EventEngine9fireE
+0041c904  00013216 R_ARM_JUMP_SLOT   00011d84   _ZNK7QRegion5rectsEv
+0041c908  00013416 R_ARM_JUMP_SLOT   00011d90   _ZN11QTouchEvent10Touc
+0041c90c  00013916 R_ARM_JUMP_SLOT   00011d9c   _ZNK19QScreenDriverPlu
+0041c910  00013c16 R_ARM_JUMP_SLOT   00011da8   _ZNK7QString10startsWi
+0041c914  00014316 R_ARM_JUMP_SLOT   00011db4   _ZN18QMouseDriverPlugi
+0041c918  00014416 R_ARM_JUMP_SLOT   00011dc0   _ZN15QWSMouseHandlerD2
+0041c91c  00014516 R_ARM_JUMP_SLOT   00011dcc   _ZNK7QStringeqERK13QLa
+0041c920  00014616 R_ARM_JUMP_SLOT   00011dd8   poll
+0041c924  00014b16 R_ARM_JUMP_SLOT   00011de4   _ZN9QHashData11free_he
+0041c928  00014c16 R_ARM_JUMP_SLOT   00011df0   _ZN9Affiliate7getNameE
+0041c92c  00014d16 R_ARM_JUMP_SLOT   00011dfc   _ZN6QTimerC1EP7QObject
+0041c930  00014e16 R_ARM_JUMP_SLOT   00011e08   _ZNK7QString5splitERKS
+0041c934  00015616 R_ARM_JUMP_SLOT   00011e14   _ZNK8QVariant8toDouble
+0041c938  00015916 R_ARM_JUMP_SLOT   00011e20   _ZNK7QScreen11mapToDev
+0041c93c  00015c16 R_ARM_JUMP_SLOT   00011e2c   _ZN9QSettings6removeER
+0041c940  00015d16 R_ARM_JUMP_SLOT   00011e38   __cxa_end_catch
+0041c944  00016116 R_ARM_JUMP_SLOT   00011e44   _ZN9QSettingsD1Ev
+0041c948  00016216 R_ARM_JUMP_SLOT   00011e50   _ZN9QMetaType12registe
+0041c94c  00016416 R_ARM_JUMP_SLOT   00011e5c   _ZN14QLinuxFbScreen14s
+0041c950  00016516 R_ARM_JUMP_SLOT   00011e68   _ZN11QTouchEvent10Touc
+0041c954  00016616 R_ARM_JUMP_SLOT   00011e74   __aeabi_atexit
+0041c958  00016816 R_ARM_JUMP_SLOT   00011e80   _ZN9QListData6detachEi
+0041c95c  00016c16 R_ARM_JUMP_SLOT   00011e8c   _ZN11QTextStreamlsEi
+0041c960  00016d16 R_ARM_JUMP_SLOT   00011e98   _ZN18QWSKeyboardHandle
+0041c964  00016e16 R_ARM_JUMP_SLOT   00011ea4   __cxa_rethrow
+0041c968  00016f16 R_ARM_JUMP_SLOT   00011eb0   _ZN7QRegExpC1ERK7QStri
+0041c96c  00017416 R_ARM_JUMP_SLOT   00011ebc   _ZNK7QScreen13mapFromD
+0041c970  00017a16 R_ARM_JUMP_SLOT   00011ec8   _ZN7QObject11qt_metaca
+0041c974  00017d16 R_ARM_JUMP_SLOT   00011ed4   _ZN14QLinuxFbScreen7co
+0041c978  00017e16 R_ARM_JUMP_SLOT   00011ee0   _ZN13QNetworkProxyC1Ev
+0041c97c  00018316 R_ARM_JUMP_SLOT   00011eec   _ZN16VolumeShortcoverC
+0041c980  00018516 R_ARM_JUMP_SLOT   00011ef8   _ZN14QLinuxFbScreen7re
+0041c984  00018816 R_ARM_JUMP_SLOT   00011f04   _ZN16QKbdDriverPluginC
+0041c988  00018d16 R_ARM_JUMP_SLOT   00011f10   _ZN12QApplication4exec
+0041c98c  00018f16 R_ARM_JUMP_SLOT   00011f1c   _ZNK7QScreen13supports
+0041c990  00019016 R_ARM_JUMP_SLOT   00011f28   _ZN7QRegExpD1Ev
+0041c994  00019216 R_ARM_JUMP_SLOT   00011f34   _ZN14QLinuxFbScreen5bl
+0041c998  00019516 R_ARM_JUMP_SLOT   00011f40   _ZN15QSocketNotifier10
+0041c99c  00019616 R_ARM_JUMP_SLOT   00011f4c   _ZNK7QScreen11mapToDev
+0041c9a0  00019716 R_ARM_JUMP_SLOT   00011f58   _ZN11EventEngine14shar
+0041c9a4  00019816 R_ARM_JUMP_SLOT   00011f64   _ZNK7QString8toDoubleE
+0041c9a8  00019916 R_ARM_JUMP_SLOT   00011f70   _ZN11QMetaObject8activ
+0041c9ac  00019a16 R_ARM_JUMP_SLOT   00011f7c   unsetenv
+0041c9b0  00019b16 R_ARM_JUMP_SLOT   00011f88   strcmp
+0041c9b4  00019c16 R_ARM_JUMP_SLOT   00011f94   _ZN7QObject11eventFilt
+0041c9b8  00019f16 R_ARM_JUMP_SLOT   00011fa0   _ZNK7QScreen13createSu
+0041c9bc  0001a616 R_ARM_JUMP_SLOT   00011fac   __cxa_pure_virtual
+0041c9c0  0001a716 R_ARM_JUMP_SLOT   00011fb8   _ZN6QTimerD1Ev
+0041c9c4  0001a916 R_ARM_JUMP_SLOT   00011fc4   _Z25qt_translateRawTou
+0041c9c8  0001aa16 R_ARM_JUMP_SLOT   00011fd0   _ZN9QHashData14detach_
+0041c9cc  0001ad16 R_ARM_JUMP_SLOT   00011fdc   memset
+0041c9d0  0001b016 R_ARM_JUMP_SLOT   00011fe8   _ZN14QLinuxFbScreen4sa
+0041c9d4  0001b716 R_ARM_JUMP_SLOT   00011ff4   _ZN6VolumeD1Ev
+0041c9d8  0001b816 R_ARM_JUMP_SLOT   00012000   _ZN11QVectorData4freeE
+0041c9dc  0001b916 R_ARM_JUMP_SLOT   0001200c   __cxa_end_cleanup
+0041c9e0  0001bb16 R_ARM_JUMP_SLOT   00012018   _ZNSs4_Rep10_M_destroy
+0041c9e4  0001bd16 R_ARM_JUMP_SLOT   00012024   _ZN8QVariantC1ERKS_
+0041c9e8  0001c016 R_ARM_JUMP_SLOT   00012030   _ZN9QSettingsC1EP7QObj
+0041c9ec  0001c116 R_ARM_JUMP_SLOT   0001203c   _ZN7QObject5eventEP6QE
+0041c9f0  0001c516 R_ARM_JUMP_SLOT   00012048   _Z21qRegisterResourceD
+0041c9f4  0001c816 R_ARM_JUMP_SLOT   00012054   _ZN15SocialEventTypeC1
+0041c9f8  0001cc16 R_ARM_JUMP_SLOT   00012060   _ZN9QListData6appendEv
+0041c9fc  0001cf16 R_ARM_JUMP_SLOT   0001206c   _ZNK7QRegExp7indexInER
+0041ca00  0001d016 R_ARM_JUMP_SLOT   00012078   _ZN7QRegionC1ERK5QRect
+0041ca04  0001d116 R_ARM_JUMP_SLOT   00012084   _ZN9QDateTimeD1Ev
+0041ca08  0001d416 R_ARM_JUMP_SLOT   00012090   _ZN7QStringaSERKS_
+0041ca0c  0001d516 R_ARM_JUMP_SLOT   0001209c   _ZN7QScreen11haltUpdat
+0041ca10  0001d616 R_ARM_JUMP_SLOT   000120a8   _ZN16QKbdDriverPlugin1
+0041ca14  0001d716 R_ARM_JUMP_SLOT   000120b4   abort
+0041ca18  0001d816 R_ARM_JUMP_SLOT   000120c0   _ZN7QScreen9solidFillE
+0041ca1c  0001d916 R_ARM_JUMP_SLOT   000120cc   _ZN9QDateTimeC1ERKS_
+0041ca20  0001da16 R_ARM_JUMP_SLOT   000120d8   _ZN18QWSKeyboardHandle
+0041ca24  0001dc16 R_ARM_JUMP_SLOT   000120e4   _ZNK7QString7toAsciiEv
+0041ca28  0001de16 R_ARM_JUMP_SLOT   000120f0   _ZN9QIODevice7readAllE
+0041ca2c  0001e016 R_ARM_JUMP_SLOT   000120fc   _ZN9__gnu_cxx18__excha
+0041ca30  0001e116 R_ARM_JUMP_SLOT   00012108   _ZN7QScreen12memoryNee
+0041ca34  0001e216 R_ARM_JUMP_SLOT   00012114   _ZNK7QRegion7isEmptyEv
+0041ca38  0001e416 R_ARM_JUMP_SLOT   00012120   _ZNK7QString11toLocal8
+0041ca3c  0001e816 R_ARM_JUMP_SLOT   0001212c   _ZN7QString4freeEPNS_4
+0041ca40  0001ea16 R_ARM_JUMP_SLOT   00012138   _ZNK7QString5toIntEPbi
+0041ca44  0001ed16 R_ARM_JUMP_SLOT   00012144   _ZN7QObject16disconnec
+0041ca48  0001ee16 R_ARM_JUMP_SLOT   00012150   _ZN18QMouseDriverPlugi
+0041ca4c  0001f016 R_ARM_JUMP_SLOT   0001215c   _ZN11QTouchEvent10Touc
+0041ca50  0001f416 R_ARM_JUMP_SLOT   00012168   _ZN7QThread5startENS_8
+0041ca54  0001f616 R_ARM_JUMP_SLOT   00012174   _ZN19QScreenDriverPlug
+0041ca58  0001f716 R_ARM_JUMP_SLOT   00012180   _ZN7QRegionD1Ev
+0041ca5c  0001f816 R_ARM_JUMP_SLOT   0001218c   _ZNK7QRegion5uniteERK5
+0041ca60  0001f916 R_ARM_JUMP_SLOT   00012198   _ZNK7QScreen13mapFromD
+0041ca64  0001fa16 R_ARM_JUMP_SLOT   000121a4   _ZN11QTouchEvent10Touc
+0041ca68  0001fc16 R_ARM_JUMP_SLOT   000121b0   ts_read_raw
+0041ca6c  0001fd16 R_ARM_JUMP_SLOT   000121bc   _ZNK7QScreen13mapFromD
+0041ca70  00020116 R_ARM_JUMP_SLOT   000121c8   _ZNK7QScreen13mapFromD
+0041ca74  00020316 R_ARM_JUMP_SLOT   000121d4   _ZNK7QString3argERKS_i
+0041ca78  00020516 R_ARM_JUMP_SLOT   000121e0   _ZN7QObject11qt_metaca
+0041ca7c  00020716 R_ARM_JUMP_SLOT   000121ec   __aeabi_uidivmod
+0041ca80  00020b16 R_ARM_JUMP_SLOT   000121f8   _ZN19QScreenDriverPlug
+0041ca84  00020d16 R_ARM_JUMP_SLOT   00012204   _Z9qBadAllocv
+0041ca88  00020e16 R_ARM_JUMP_SLOT   00012210   _ZN6QTimer4stopEv
+0041ca8c  00021116 R_ARM_JUMP_SLOT   0001221c   _ZNK18QMouseDriverPlug
+0041ca90  00021216 R_ARM_JUMP_SLOT   00012228   _ZN9QHashData6rehashEi
+0041ca94  00021316 R_ARM_JUMP_SLOT   00012234   read
+0041ca98  00021516 R_ARM_JUMP_SLOT   00012240   _ZNK7QScreen13createSu
+0041ca9c  00021816 R_ARM_JUMP_SLOT   0001224c   _ZNK7QScreen12isInterl
+0041caa0  00021916 R_ARM_JUMP_SLOT   00012258   usleep
+0041caa4  00021c16 R_ARM_JUMP_SLOT   00012264   _ZNSsD1Ev
+0041caa8  00022216 R_ARM_JUMP_SLOT   00012270   _ZN11QMetaObject11chan
+0041caac  00022716 R_ARM_JUMP_SLOT   0001227c   _ZN7QRegionaSERKS_
+0041cab0  00022916 R_ARM_JUMP_SLOT   00012288   ioctl
+0041cab4  00022d16 R_ARM_JUMP_SLOT   00012294   _ZN8ScObjectC2Ev
+0041cab8  00022e16 R_ARM_JUMP_SLOT   000122a0   _ZN16QKbdDriverPlugin1
+0041cabc  00023016 R_ARM_JUMP_SLOT   000122ac   _ZN11QVectorData8alloc
+0041cac0  00023116 R_ARM_JUMP_SLOT   000122b8   _ZN18QWSKeyboardHandle
+
+Unwind table index '.ARM.exidx' at offset 0x40b0ac contains 197 entries:
+
+0x122c8: 0x1 [cantunwind]
+
+0x12328: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x12344: @0x40c640
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x12374: @0x40c6d4
+  Personality routine: 0x11c40
+
+0x255c8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x255cc: @0x4115c4
+  Personality routine: 0x11c40
+
+0x25b2c: @0x41167c
+  Personality routine: 0x11c40
+
+0x25de0: @0x4116f0
+  Personality routine: 0x11c40
+
+0x26594: @0x411824
+  Personality routine: 0x11c40
+
+0x268c8: @0x40c64c
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x268e4: @0x40c658
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26900: @0x40c664
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2691c: @0x40c670
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26938: @0x40c67c
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26954: @0x40c688
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26970: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26990: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x26998: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26a0c: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26adc: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26af8: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26bd0: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26bec: @0x40c694
+  Personality routine: 0x11c40
+
+0x26c40: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26c5c: @0x40c6b4
+  Personality routine: 0x11c40
+
+0x26cb4: 0x80aeb0b0
+  Compact model 0
+  0xae      pop {r4, r5, r6, r7, r8, r9, r10r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26d48: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x26e2c: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x26edc: @0x411868
+  Personality routine: 0x11c40
+
+0x270a0: @0x4118b0
+  Personality routine: 0x11c40
+
+0x2715c: @0x4118dc
+  Personality routine: 0x11c40
+
+0x27608: @0x41196c
+  Personality routine: 0x11c40
+
+0x278e0: @0x4119cc
+  Personality routine: 0x11c40
+
+0x27ac8: @0x411a30
+  Personality routine: 0x11c40
+
+0x27cd8: @0x411a74
+  Personality routine: 0x11c40
+
+0x27dcc: @0x411aa8
+  Personality routine: 0x11c40
+
+0x27e84: @0x411acc
+  Personality routine: 0x11c40
+
+0x27f54: @0x411afc
+  Personality routine: 0x11c40
+
+0x280b8: @0x411b3c
+  Personality routine: 0x11c40
+
+0x282b8: @0x411b90
+  Personality routine: 0x11c40
+
+0x28540: @0x411bec
+  Personality routine: 0x11c40
+
+0x285bc: @0x411c04
+  Personality routine: 0x11c40
+
+0x28758: @0x411c48
+  Personality routine: 0x11c40
+
+0x288f4: @0x411c8c
+  Personality routine: 0x11c40
+
+0x28bc4: @0x411cec
+  Personality routine: 0x11c40
+
+0x28c7c: 0x80aeb0b0
+  Compact model 0
+  0xae      pop {r4, r5, r6, r7, r8, r9, r10r14}
+  0xb0      finish
+  0xb0      finish
+
+0x28cf0: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x28d3c: @0x411d10
+  Personality routine: 0x11c40
+
+0x28e74: @0x411d44
+  Personality routine: 0x11c40
+
+0x291bc: 0x80aeb0b0
+  Compact model 0
+  0xae      pop {r4, r5, r6, r7, r8, r9, r10r14}
+  0xb0      finish
+  0xb0      finish
+
+0x29234: @0x411dd0
+  Personality routine: 0x11c40
+
+0x293b8: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x29418: @0x411e18
+  Personality routine: 0x11c40
+
+0x29668: @0x411e80
+  Personality routine: 0x11c40
+
+0x296f8: @0x411ea0
+  Personality routine: 0x11c40
+
+0x29950: @0x411f08
+  Personality routine: 0x11c40
+
+0x29b14: @0x411f5c
+  Personality routine: 0x11c40
+
+0x29c9c: @0x411fa4
+  Personality routine: 0x11c40
+
+0x29e20: @0x411ff0
+  Personality routine: 0x11c40
+
+0x2a450: @0x4120f0
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a47c: @0x4120fc
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a4a8: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a4ec: @0x412108
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a510: @0x412114
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a534: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2a578: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x2a5b8: @0x412120
+  Personality routine: 0x11c40
+
+0x2a68c: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x2a6cc: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2a6d4: @0x41213c
+  Personality routine: 0x11c40
+
+0x2a858: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2a860: @0x412178
+  Personality routine: 0x11c40
+
+0x2aa18: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2aa20: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2aa5c: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2aa64: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2aac0: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2ab98: 0x80028400
+  Compact model 0
+  0x02      vsp = vsp + 12
+  0x84 0x00 pop {r14}
+
+0x2abc8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2abd0: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2abec: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2abf4: @0x4121a8
+  Personality routine: 0x11c40
+
+0x2ac90: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2ac98: @0x4121cc
+  Personality routine: 0x11c40
+
+0x2ad2c: @0x4121f0
+  Personality routine: 0x11c40
+
+0x2adc0: @0x412214
+  Personality routine: 0x11c40
+
+0x2ae80: @0x412238
+  Personality routine: 0x11c40
+
+0x2af40: @0x41225c
+  Personality routine: 0x11c40
+
+0x2b9e0: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2ba18: @0x41237c
+  Personality routine: 0x11c40
+
+0x2baac: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2bab4: @0x41239c
+  Personality routine: 0x11c40
+
+0x2bb58: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2bb60: @0x4123bc
+  Personality routine: 0x11c40
+
+0x2c3b4: @0x4124b8
+  Personality routine: 0x11c40
+
+0x2c734: @0x412544
+  Personality routine: 0x11c40
+
+0x2cae0: @0x4125c8
+  Personality routine: 0x11c40
+
+0x2ce8c: @0x41264c
+  Personality routine: 0x11c40
+
+0x2d224: @0x4126d8
+  Personality routine: 0x11c40
+
+0x2d580: @0x412758
+  Personality routine: 0x11c40
+
+0x2d810: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x2d888: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2d8b4: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2d920: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2da64: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x2dab8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2dac8: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2db30: 0x8006a9b0
+  Compact model 0
+  0x06      vsp = vsp + 28
+  0xa9      pop {r4, r5r14}
+  0xb0      finish
+
+0x2db94: @0x412790
+  Personality routine: 0x11c40
+
+0x2dc88: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2dc90: @0x4127ac
+  Personality routine: 0x11c40
+
+0x2dea8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2deb0: @0x4127fc
+  Personality routine: 0x11c40
+
+0x2e034: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e050: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x2e0c8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e0fc: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e144: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e14c: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e188: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e190: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e1d4: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e208: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e250: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e260: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e29c: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e2a4: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x2e2e8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e418: 0x8004abb0
+  Compact model 0
+  0x04      vsp = vsp + 20
+  0xab      pop {r4, r5, r6, r7r14}
+  0xb0      finish
+
+0x2e500: 0x80028400
+  Compact model 0
+  0x02      vsp = vsp + 12
+  0x84 0x00 pop {r14}
+
+0x2e53c: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e544: @0x41282c
+  Personality routine: 0x11c40
+
+0x2e6cc: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x2e6d4: @0x412868
+  Personality routine: 0x11c40
+
+0x2e854: @0x4128a4
+  Personality routine: 0x11c40
+
+0x2e9d4: @0x4128e0
+  Personality routine: 0x11c40
+
+0x2eef8: @0x412964
+  Personality routine: 0x11c40
+
+0x2f4a4: @0x41298c
+  Personality routine: 0x11c40
+
+0x30098: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x300c0: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x300d0: @0x412a98
+  Personality routine: 0x11c40
+
+0x307e8: @0x412b70
+  Personality routine: 0x11c40
+
+0x30f00: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x30f04: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x30f68: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x30f6c: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x30fd0: 0x8006afb0
+  Compact model 0
+  0x06      vsp = vsp + 28
+  0xaf      pop {r4, r5, r6, r7, r8, r9, r10, r11r14}
+  0xb0      finish
+
+0x3111c: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x31148: 0x80048400
+  Compact model 0
+  0x04      vsp = vsp + 20
+  0x84 0x00 pop {r14}
+
+0x31190: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x311d8: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x31244: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x31314: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x31368: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x31370: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x313b4: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x313bc: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x31434: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x31470: @0x412c48
+  Personality routine: 0x11c40
+
+0x3154c: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x31588: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x31590: @0x412c64
+  Personality routine: 0x11c40
+
+0x316a4: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x316ac: @0x412c90
+  Personality routine: 0x11c40
+
+0x31830: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x31840: @0x412cc0
+  Personality routine: 0x11c40
+
+0x318b4: @0x412cd8
+  Personality routine: 0x11c40
+
+0x31920: @0x412cf0
+  Personality routine: 0x11c40
+
+0x3198c: @0x412d08
+  Personality routine: 0x11c40
+
+0x31e8c: 0x8008afb0
+  Compact model 0
+  0x08      vsp = vsp + 36
+  0xaf      pop {r4, r5, r6, r7, r8, r9, r10, r11r14}
+  0xb0      finish
+
+0x31f04: @0x412d80
+  Personality routine: 0x11c40
+
+0x32754: @0x412ea0
+  Personality routine: 0x11c40
+
+0x32858: @0x412ec8
+  Personality routine: 0x11c40
+
+0x32904: @0x412eec
+  Personality routine: 0x11c40
+
+0x32a08: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x32a34: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x32a7c: @0x412f14
+  Personality routine: 0x11c40
+
+0x32ae0: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x32b34: 0x80a8b0b0
+  Compact model 0
+  0xa8      pop {r4r14}
+  0xb0      finish
+  0xb0      finish
+
+0x32ba4: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x32bd0: 0x80028400
+  Compact model 0
+  0x02      vsp = vsp + 12
+  0x84 0x00 pop {r14}
+
+0x32c10: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x32c58: @0x412f30
+  Personality routine: 0x11c40
+
+0x32ccc: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x32d20: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x32d54: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x32dc0: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x32df0: @0x412f4c
+  Personality routine: 0x11c40
+
+0x32eec: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x32ef4: @0x412f78
+  Personality routine: 0x11c40
+
+0x32ff8: @0x41308c
+  Personality routine: 0x11c40
+
+0x33088: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x33160: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x331ac: @0x412fa4
+  Personality routine: 0x11c40
+
+0x33670: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x33674: 0x80aeb0b0
+  Compact model 0
+  0xae      pop {r4, r5, r6, r7, r8, r9, r10r14}
+  0xb0      finish
+  0xb0      finish
+
+0x33740: 0x1 [cantunwind]
+
+
+Symbol table '.dynsym' contains 563 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 000270a0   188 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+     2: 0002dab8     8 FUNC    WEAK   DEFAULT   12 _ZN7QScreen21pixmapOffset
+     3: 0002e0fc    72 FUNC    GLOBAL DEFAULT   12 _ZN26iMX508KeyboardDriver
+     4: 0002ae80   192 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508ScreenC2Ei
+     5: 00028bc4   184 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+     6: 00026994     4 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+     7: 00033088   216 FUNC    WEAK   DEFAULT   12 _ZN5QListIN11QTouchEvent1
+     8: 00026e84    88 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+     9: 00026594   820 FUNC    GLOBAL DEFAULT   12 main
+    10: 0001170c     0 FUNC    GLOBAL DEFAULT  UND _ZN8ScObjectD2Ev
+    11: 00026de4    72 FUNC    WEAK   DEFAULT   12 _ZN10QByteArrayD1Ev
+    12: 00011718     0 FUNC    GLOBAL DEFAULT  UND _ZN18QMouseDriverPlugin11
+    13: 0002a6cc     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N24iMX508ScreenDri
+    14: 00032df0   252 FUNC    WEAK   DEFAULT   12 _ZN12TslibHandlerD1Ev
+    15: 00011724     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11mapToDevice
+    16: 0002adc0   192 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508ScreenC1Ei
+    17: 0002aaf0    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen16unforc
+    18: 00011730     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11mapToDevice
+    19: 0001173c     0 FUNC    GLOBAL DEFAULT  UND ts_open
+    20: 0002deb0   388 FUNC    GLOBAL DEFAULT   12 _ZNK26iMX508KeyboardDrive
+    21: 00032dcc     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N12TslibHandler6re
+    22: 0002db94   244 FUNC    GLOBAL DEFAULT   12 _Z28qt_plugin_instance_im
+    23: 00011748     0 FUNC    GLOBAL DEFAULT  UND __cxa_begin_catch@CXXABI_1.3 (2)
+    24: 00032a34    72 FUNC    GLOBAL DEFAULT   12 _ZN20TslibDispatchHandler
+    25: 00032b68    60 FUNC    WEAK   DEFAULT   12 _ZN20TslibDispatchHandler
+    26: 0002e1d8    44 FUNC    GLOBAL DEFAULT   12 _ZNK21iMX508KeyboardHandl
+    27: 00011754     0 FUNC    GLOBAL DEFAULT  UND ts_config
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_unwind_cpp_pr1@GCC_3.5 (3)
+    29: 00011760     0 FUNC    GLOBAL DEFAULT  UND _ZN7QThread4quitEv
+    30: 0001176c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegionC1Ev
+    31: 00011778     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QRegion12boundingRec
+    32: 0041fe9c     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end__
+    33: 00011784     0 FUNC    GLOBAL DEFAULT  UND _ZN8QMapData10createDataE
+    34: 00011790     0 FUNC    GLOBAL DEFAULT  UND _ZN11QVectorData10realloc
+    35: 0001179c     0 FUNC    GLOBAL DEFAULT  UND backtrace_symbols@GLIBC_2.4 (4)
+    36: 000316ac   388 FUNC    GLOBAL DEFAULT   12 _ZNK17TslibDriverPlugin4k
+    37: 000117a8     0 FUNC    GLOBAL DEFAULT  UND _Z23qUnregisterResourceDa
+    38: 0002ab38    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen17unforc
+    39: 000117b4     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData8nextNodeEPN
+    40: 00031830    16 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler5c
+    41: 0002c734   940 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen18forceB
+    42: 000331ac  1220 FUNC    WEAK   DEFAULT   12 _ZN5QListIN11QTouchEvent1
+    43: 000122c8     0 FUNC    GLOBAL DEFAULT   12 _start
+    44: 0041cfb8    36 OBJECT  GLOBAL DEFAULT   24 _ZTV7Content
+    45: 0041cfe0    32 OBJECT  GLOBAL DEFAULT   24 _ZTV10ContentKey
+    46: 000117c0     0 FUNC    GLOBAL DEFAULT  UND _ZN11EventEngine12addCust
+    47: 00028540   124 FUNC    WEAK   DEFAULT   12 _ZN5QHashI7QStringS0_E13d
+    48: 0002db30   100 FUNC    WEAK   DEFAULT   12 _ZNK7QScreen6regionEv
+    49: 000117cc     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTextStreamlsERK7QSt
+    50: 0002a4ec    36 FUNC    GLOBAL DEFAULT   12 _Z30qCleanupResources_cer
+    51: 000117d8     0 FUNC    GLOBAL DEFAULT  UND _ZN10QByteArray7reallocEi
+    52: 0002a6d4   388 FUNC    GLOBAL DEFAULT   12 _ZN24iMX508ScreenDriverPl
+    53: 00029668   144 FUNC    WEAK   DEFAULT   12 _ZN5QHashI7QStringS0_E11d
+    54: 000117e4     0 FUNC    GLOBAL DEFAULT  UND _ZN9AffiliateD1Ev
+    55: 000296f8   600 FUNC    WEAK   DEFAULT   12 _ZN6DeviceD0Ev
+    56: 000117f0     0 FUNC    GLOBAL DEFAULT  UND _ZN8QMapData11node_create
+    57: 00027dcc   184 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+    58: 000117fc     0 FUNC    GLOBAL DEFAULT  UND _ZN19QScreenDriverPluginD
+    59: 00011808     0 FUNC    GLOBAL DEFAULT  UND __aeabi_idivmod@GCC_3.5 (3)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_unwind_cpp_pr0@GCC_3.5 (3)
+    61: 00011814     0 FUNC    GLOBAL DEFAULT  UND _ZN8QMapData11node_delete
+    62: 00033750     0 FUNC    GLOBAL DEFAULT   13 _fini
+    63: 00033670     4 FUNC    GLOBAL DEFAULT   12 __libc_csu_fini
+    64: 00011820     0 FUNC    GLOBAL DEFAULT  UND sleep@GLIBC_2.4 (4)
+    65: 00029418   592 FUNC    WEAK   DEFAULT   12 _ZN6DeviceD1Ev
+    66: 0002e050    60 FUNC    GLOBAL DEFAULT   12 _ZN21iMX508KeyboardHandle
+    67: 000307e8  1816 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+    68: 0002e3d8    16 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+    69: 00032858   172 FUNC    GLOBAL DEFAULT   12 _ZN12TslibHandler16startD
+    70: 00031368     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N17TslibDriverPlug
+    71: 0001182c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegExp3capEi
+    72: 0002abd0    28 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen14shutdo
+    73: 00011838     0 FUNC    GLOBAL DEFAULT  UND _Zls6QDebugRK5QRect
+    74: 00032de4     4 FUNC    WEAK   DEFAULT   12 _ZN12TslibHandler7suspend
+    75: 00011844     0 FUNC    GLOBAL DEFAULT  UND sigaction@GLIBC_2.4 (5)
+    76: 0002e500    60 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+    77: 00026adc    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+    78: 00032de8     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N12TslibHandlerD1E
+    79: 0002aad8    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen21unforc
+    80: 00011850     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11pixmapDepth
+    81: 00026970    32 FUNC    WEAK   DEFAULT   12 _ZN7QStringC1EPKc
+    82: 0001185c     0 FUNC    GLOBAL DEFAULT  UND _ZN8QMapData16continueFre
+    83: 00011868     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13isTransform
+    84: 0002aae4    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen14forceI
+    85: 00011874     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegionC1EiiiiNS_10Re
+    86: 00011880     0 FUNC    GLOBAL DEFAULT  UND _ZN18Nickel3ApplicationC1
+    87: 00026af8   216 FUNC    WEAK   DEFAULT   12 _ZN5QListI6VolumeE4freeEP
+    88: 00032d50     4 FUNC    GLOBAL DEFAULT   12 _ZN12TslibHandler11qt_met
+    89: 0002a68c    64 FUNC    GLOBAL DEFAULT   12 _ZN24iMX508ScreenDriverPl
+    90: 00031434    60 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPluginC1E
+    91: 0002e250     8 FUNC    WEAK   DEFAULT   12 _ZN31AbstractBlockingKeyb
+    92: 0002e6d4   384 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+    93: 0002cae0   940 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen11forceD
+    94: 0041d000    44 OBJECT  GLOBAL DEFAULT   24 _ZTVN10__cxxabiv121__vmi_@CXXABI_1.3 (2)
+    95: 0040c5e4    15 OBJECT  GLOBAL DEFAULT   14 _ZTS12TslibHandler
+    96: 0001188c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen4blitERK6QImag
+    97: 0002abf4   156 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508ScreenD0Ev
+    98: 0002af40  2720 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen5flushEv
+    99: 0002a5b8   212 FUNC    GLOBAL DEFAULT   12 _Z25qt_plugin_instance_im
+   100: 0002ab20    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen27unforc
+   101: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZNSs4_Rep20_S_empty_rep_@GLIBCXX_3.4 (6)
+   102: 00011898     0 FUNC    GLOBAL DEFAULT  UND _ZN18QWSKeyboardHandlerD2
+   103: 000118a4     0 FUNC    GLOBAL DEFAULT  UND _ZN15SocialEventTypeD1Ev
+   104: 0002eef8  1452 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   105: 000118b0     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen6onCardEPKhRm
+   106: 0002aa64    68 FUNC    WEAK   DEFAULT   12 _ZN24iMX508ScreenDriverPl
+   107: 000118bc     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject10childEventEP
+   108: 00032ff8   144 FUNC    GLOBAL DEFAULT   12 _ZN20TslibDispatchHandler
+   109: 0002bb60  2132 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen10initDe
+   110: 000118c8     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString7toUpperEv
+   111: 0002e0cc    44 FUNC    GLOBAL DEFAULT   12 _ZNK26iMX508KeyboardDrive
+   112: 000118d4     0 FUNC    GLOBAL DEFAULT  UND ts_close
+   113: 0002d810   120 FUNC    WEAK   DEFAULT   12 _ZN7QVectorI5QRectED1Ev
+   114: 00029c9c   388 FUNC    WEAK   DEFAULT   12 _ZN11GAEventTypeD1Ev
+   115: 000118e0     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTextStreamC1EP7QStr
+   116: 000118ec     0 FUNC    GLOBAL DEFAULT  UND _ZN11GAEventTypeC1Eib7QSt
+   117: 0041cb38     0 NOTYPE  GLOBAL DEFAULT   23 __data_start
+   118: 0041c248    16 OBJECT  GLOBAL DEFAULT   20 _ZN21iMX508KeyboardHandle
+   119: 000118f8     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString3argEdiciRK5Q
+   120: 0041cfb8     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   121: 000282b8   648 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   122: 0002691c    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   123: 0041c018    88 OBJECT  GLOBAL DEFAULT   20 _ZTV24iMX508ScreenDriverP
+   124: 0002e0f8     4 FUNC    GLOBAL DEFAULT   12 _ZN26iMX508KeyboardDriver
+   125: 00011904     0 FUNC    GLOBAL DEFAULT  UND _ZN11GAEventTypeC1Eib7QSt
+   126: 00011910     0 FUNC    GLOBAL DEFAULT  UND __cxa_demangle@CXXABI_1.3 (2)
+   127: 0001191c     0 FUNC    GLOBAL DEFAULT  UND _ZN13ConfigurationD1Ev
+   128: 00011928     0 FUNC    GLOBAL DEFAULT  UND ts_fd
+   129: 00032dc8     4 FUNC    WEAK   DEFAULT   12 _ZNK15QWSMouseHandler14ge
+   130: 00011934     0 FUNC    GLOBAL DEFAULT  UND _ZN18QWSKeyboardHandler13
+   131: 00011940     0 FUNC    GLOBAL DEFAULT  UND _ZN18QMouseDriverPluginC2
+   132: 0001194c     0 FUNC    GLOBAL DEFAULT  UND _ZN5QFile4openE6QFlagsIN9
+   133: 00011958     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen13shar
+   134: 00011964     0 FUNC    GLOBAL DEFAULT  UND _ZN5QFile5closeEv
+   135: 00011970     0 FUNC    GLOBAL DEFAULT  UND _ZN16QCoreApplication18se
+   136: 00032754   260 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandlerC1
+   137: 0041c098   264 OBJECT  GLOBAL DEFAULT   20 _ZTV12iMX508Screen
+   138: 0041d030     8 OBJECT  GLOBAL DEFAULT   24 _ZTI18QWSKeyboardHandler
+   139: 0002e208    72 FUNC    GLOBAL DEFAULT   12 _ZN21iMX508KeyboardHandle
+   140: 0001197c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11mapToDevice
+   141: 00011988     0 FUNC    GLOBAL DEFAULT  UND _ZN15QWSMouseHandlerC2ERK
+   142: 0040b8f0    27 OBJECT  GLOBAL DEFAULT   14 _ZTS24iMX508ScreenDriverP
+   143: 00011994     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject10timerEventEP
+   144: 0003198c  1280 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler6h
+   145: 000119a0     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreenC2Ei
+   146: 000119ac     0 FUNC    GLOBAL DEFAULT  UND strerror@GLIBC_2.4 (4)
+   147: 00026c40    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   148: 000119b8     0 FUNC    GLOBAL DEFAULT  UND _ZN15SocialEventTypeC1Ev
+   149: 000119c4     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTextStreamlsEc
+   150: 00029e20  1584 FUNC    WEAK   DEFAULT   12 _ZN15ApplicationBaseI12QA
+   151: 000119d0     0 FUNC    GLOBAL DEFAULT  UND _ZN12PowerManager14shared
+   152: 000119dc     0 FUNC    GLOBAL DEFAULT  UND __cxa_guard_acquire@CXXABI_1.3 (2)
+   153: 0002a564    20 FUNC    WEAK   DEFAULT   12 _ZN44qCleanupResources_ce
+   154: 000119e8     0 FUNC    GLOBAL DEFAULT  UND _ZN13QNetworkProxyD1Ev
+   155: 0041c2e0    96 OBJECT  GLOBAL DEFAULT   20 _ZTV31AbstractBlockingKey
+   156: 0002e474   140 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   157: 0002aafc    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen13unforc
+   158: 0041d038    44 OBJECT  GLOBAL DEFAULT   24 _ZTVN10__cxxabiv117__clas@CXXABI_1.3 (2)
+   159: 00030f00     4 FUNC    WEAK   DEFAULT   12 _ZN5QHashIi15QHashDummyVa
+   160: 0002aa18     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N24iMX508ScreenDri
+   161: 000119f4     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject12moveToThread
+   162: 00011a00     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13mapFromDevi
+   163: 00011a0c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString7toLowerEv
+   164: 0041fe9c     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   165: 00011a18     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen6offsetEv
+   166: 00011a24     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject11customEventE
+   167: 000300c8     8 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   168: 00011a30     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.4 (4)
+   169: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+   170: 00032eec     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N12TslibHandlerD0E
+   171: 000293b8    96 FUNC    WEAK   DEFAULT   12 _ZN4QMapI7QString8QVarian
+   172: 00011a48     0 FUNC    GLOBAL DEFAULT  UND _ZN10ShortcoverC1Ev
+   173: 00011a54     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen10init
+   174: 0041c088    16 OBJECT  GLOBAL DEFAULT   20 _ZN12iMX508Screen16static
+   175: 00011a60     0 FUNC    GLOBAL DEFAULT  UND _ZN15QSocketNotifierC1EiN
+   176: 00011a6c     0 FUNC    GLOBAL DEFAULT  UND _ZN15HardwareFactory14sha
+   177: 000291bc   120 FUNC    WEAK   DEFAULT   12 _ZN4QMapI7QString8QVarian
+   178: 00011a78     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen10disc
+   179: 00011a84     0 FUNC    GLOBAL DEFAULT  UND _ZN9Affiliate24instanceFo
+   180: 00011a90     0 FUNC    GLOBAL DEFAULT  UND __errno_location@GLIBC_2.4 (5)
+   181: 0041c340    32 OBJECT  GLOBAL DEFAULT   20 _ZTI31AbstractBlockingKey
+   182: 0041c508    32 OBJECT  GLOBAL DEFAULT   20 _ZTI12TslibHandler
+   183: 0040c558    21 OBJECT  GLOBAL DEFAULT   14 _ZTS18TslibActualHandler
+   184: 00011a9c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QStringC1E5QChar
+   185: 00026c5c    88 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   186: 0002ab2c    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen15forceF
+   187: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZN9QHashData11shared_nul
+   188: 00011aa8     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen7uncac
+   189: 0041c1d8    88 OBJECT  GLOBAL DEFAULT   20 _ZTV26iMX508KeyboardDrive
+   190: 00011ab4     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreenD2Ev
+   191: 00026998    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   192: 00011ac0     0 FUNC    GLOBAL DEFAULT  UND sigemptyset@GLIBC_2.4 (4)
+   193: 00032dc0     4 FUNC    WEAK   DEFAULT   12 _ZN15QWSMouseHandler16cle
+   194: 0041d068    32 OBJECT  GLOBAL DEFAULT   24 _ZTV8Bookmark
+   195: 00011acc     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen13resumeUpdate
+   196: 00011ad8     0 FUNC    GLOBAL DEFAULT  UND _ZN6IOUtil12fileToStringE
+   197: 00011ae4     0 FUNC    GLOBAL DEFAULT  UND _ZNSsC1EPKcjRKSaIcE@GLIBCXX_3.4 (6)
+   198: 0002ab14    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen25forceA
+   199: 00011af0     0 FUNC    GLOBAL DEFAULT  UND _ZN6DeviceC1Ev
+   200: 0041c440    56 OBJECT  GLOBAL DEFAULT   20 _ZTV18TslibActualHandler
+   201: 00011afc     0 FUNC    GLOBAL DEFAULT  UND _ZN5QFileD1Ev
+   202: 0002c3b4   896 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen16unforc
+   203: 00011b08     0 FUNC    GLOBAL DEFAULT  UND _ZN7QString9fromAsciiEPKc
+   204: 0040bf64    29 OBJECT  GLOBAL DEFAULT   14 _ZTS26iMX508KeyboardDrive
+   205: 0002baac     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N12iMX508Screen8se
+   206: 00000000     0 OBJECT  GLOBAL DEFAULT  UND qt_screen
+   207: 00032904   260 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandlerC2
+   208: 0041d088    32 OBJECT  GLOBAL DEFAULT   24 _ZTI19QScreenDriverPlugin
+   209: 00011b14     0 FUNC    GLOBAL DEFAULT  UND _ZN5QFileC1ERK7QString
+   210: 00011b20     0 FUNC    GLOBAL DEFAULT  UND _ZN19QScreenDriverPlugin1
+   211: 00011b2c     0 FUNC    GLOBAL DEFAULT  UND _ZN6IOUtil14makeSystemCal
+   212: 0041d0a8    32 OBJECT  GLOBAL DEFAULT   24 _ZTV11Publication
+   213: 00011b38     0 FUNC    GLOBAL DEFAULT  UND _ZN11QMetaObject11removeG
+   214: 00031370    68 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPluginD0E
+   215: 0002a4d8    20 FUNC    WEAK   DEFAULT   12 _ZN41qCleanupResources_re
+   216: 0002aacc    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen19forceP
+   217: 0002dc90   536 FUNC    GLOBAL DEFAULT   12 _ZN26iMX508KeyboardDriver
+   218: 00026bec    84 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   219: 00011b44     0 FUNC    GLOBAL DEFAULT  UND _ZN13QNetworkProxyC1ERKS_
+   220: 00011b50     0 FUNC    GLOBAL DEFAULT  UND _ZN16QCoreApplication19se
+   221: 00011b5c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QString16fromAscii_he
+   222: 00011b68     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   223: 00011b74     0 FUNC    GLOBAL DEFAULT  UND _ZN18Nickel3ApplicationD1
+   224: 00011b80     0 FUNC    GLOBAL DEFAULT  UND backtrace@GLIBC_2.4 (4)
+   225: 000269b4    44 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   226: 00033770     8 OBJECT  WEAK   DEFAULT   14 _ZTI6Device
+   227: 00011b8c     0 FUNC    GLOBAL DEFAULT  UND free@GLIBC_2.4 (4)
+   228: 00011b98     0 FUNC    GLOBAL DEFAULT  UND _ZdlPv@GLIBCXX_3.4 (6)
+   229: 00026bd0    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   230: 0002d888    44 FUNC    GLOBAL DEFAULT   12 _ZNK12iMX508Screen10metaO
+   231: 0002e258     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N21iMX508KeyboardH
+   232: 00011ba4     0 FUNC    GLOBAL DEFAULT  UND close@GLIBC_2.4 (5)
+   233: 00011bb0     0 FUNC    GLOBAL DEFAULT  UND _ZN4UserC1Ev
+   234: 00011bbc     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen15fixu
+   235: 00027608   728 FUNC    WEAK   DEFAULT   12 _ZN8BookmarkC1ERKS_
+   236: 0002ce8c   920 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen14forceA
+   237: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTISt9bad_alloc@GLIBCXX_3.4 (6)
+   238: 00011bc8     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen5allocEjjj
+   239: 00032ccc    84 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler11
+   240: 0002aa20    60 FUNC    WEAK   DEFAULT   12 _ZN24iMX508ScreenDriverPl
+   241: 00011bd4     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen6onCardEPKh
+   242: 00011be0     0 FUNC    GLOBAL DEFAULT  UND __cxa_guard_release@CXXABI_1.3 (2)
+   243: 00028c7c   116 FUNC    WEAK   DEFAULT   12 _ZN5QListI7QStringE4freeE
+   244: 00011bec     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject13connectNotif
+   245: 00011bf8     0 FUNC    GLOBAL DEFAULT  UND _ZN8QVariantD1Ev
+   246: 00011c04     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen7setMo
+   247: 00011c10     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen12exposeRegion
+   248: 0002a578    64 FUNC    GLOBAL DEFAULT   12 _ZN24iMX508ScreenDriverPl
+   249: 00011c1c     0 FUNC    GLOBAL DEFAULT  UND _Z17qt_message_output9QtM
+   250: 00030fd0   332 FUNC    WEAK   DEFAULT   12 _ZN4QSetIiE6insertERKi
+   251: 00011c28     0 FUNC    GLOBAL DEFAULT  UND _Znwj@GLIBCXX_3.4 (6)
+   252: 00011c34     0 FUNC    GLOBAL DEFAULT  UND _ZN6QTimer5startEi
+   253: 00011c40     0 FUNC    GLOBAL DEFAULT  UND __gxx_personality_v0@CXXABI_1.3 (2)
+   254: 0002aa5c     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N24iMX508ScreenDri
+   255: 00011c4c     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData12allocateNo
+   256: 0002ba18   148 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen15drawWh
+   257: 000288f4   720 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   258: 00011c58     0 FUNC    GLOBAL DEFAULT  UND _ZNK9QSettings5valueERK7Q
+   259: 0041c3e0    60 OBJECT  GLOBAL DEFAULT   20 _ZTV20TslibDispatchHandle
+   260: 0041cfb8     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   261: 00011c64     0 FUNC    GLOBAL DEFAULT  UND open@GLIBC_2.4 (5)
+   262: 00011c70     0 FUNC    GLOBAL DEFAULT  UND _ZN7QThreadC1EP7QObject
+   263: 0002e2a4    68 FUNC    WEAK   DEFAULT   12 _ZN21iMX508KeyboardHandle
+   264: 00011c7c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObjectC2EPS_
+   265: 0041d0c8    12 OBJECT  GLOBAL DEFAULT   24 _ZTV6Volume
+   266: 0041c2b8    12 OBJECT  GLOBAL DEFAULT   20 _ZTI21iMX508KeyboardHandl
+   267: 00011c88     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObjectD2Ev
+   268: 00011c94     0 FUNC    GLOBAL DEFAULT  UND _ZN6Device16getCurrentDev
+   269: 0041c4a0   104 OBJECT  GLOBAL DEFAULT   20 _ZTV12TslibHandler
+   270: 0041d0d8    32 OBJECT  GLOBAL DEFAULT   24 _ZTV4User
+   271: 0041d0f8    16 OBJECT  GLOBAL DEFAULT   24 _ZN7QObject16staticMetaOb
+   272: 00011ca0     0 FUNC    GLOBAL DEFAULT  UND _ZN16QKbdDriverPluginD2Ev
+   273: 00011cac     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen5cache
+   274: 0002ab08    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen20unforc
+   275: 0041c230    12 OBJECT  GLOBAL DEFAULT   20 _ZTI26iMX508KeyboardDrive
+   276: 0002d580   656 FUNC    WEAK   DEFAULT   12 _ZN7QVectorI5QRectE7reall
+   277: 00011cb8     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen12useO
+   278: 00011cc4     0 FUNC    GLOBAL DEFAULT  UND _ZN18MassStorageManager14
+   279: 00011cd0     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QStringeqERKS_
+   280: 0041d108     8 OBJECT  GLOBAL DEFAULT   24 _ZTI7QObject
+   281: 00011cdc     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen3setEj
+   282: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+   283: 00011ce8     0 FUNC    GLOBAL DEFAULT  UND _ZN6VolumeC1Ev
+   284: 00011cf4     0 FUNC    GLOBAL DEFAULT  UND _Z5qFreePv
+   285: 00011d00     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTextStreamD1Ev
+   286: 00011d0c     0 FUNC    GLOBAL DEFAULT  UND _ZN9QListData11detach_gro
+   287: 0041d110    12 OBJECT  GLOBAL DEFAULT   24 _ZTI14QLinuxFbScreen
+   288: 00011d18     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   289: 000285bc   412 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   290: 0002e3d4     4 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   291: 00011d24     0 FUNC    GLOBAL DEFAULT  UND _ZN15SocialEventTypeD2Ev
+   292: 00011d30     0 FUNC    GLOBAL DEFAULT  UND _ZN13ConfigurationC1Ev
+   293: 00027cd8   244 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   294: 000300d0  1816 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   295: 00011d3c     0 FUNC    GLOBAL DEFAULT  UND _ZN7ContentD2Ev
+   296: 00011d48     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject7connectEPKS_P
+   297: 00011d54     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen20transformOr
+   298: 00033160    76 FUNC    WEAK   DEFAULT   12 _ZN5QListIN11QTouchEvent1
+   299: 0041cfb8     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start__
+   300: 00032d54   108 FUNC    GLOBAL DEFAULT   12 _ZN12TslibHandler11qt_met
+   301: 00011d60     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData8freeNodeEPv
+   302: 0002e188     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N26iMX508KeyboardD
+   303: 00011d6c     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   304: 00011d78     0 FUNC    GLOBAL DEFAULT  UND _ZN11EventEngine9fireEven
+   305: 0041c2d0    16 OBJECT  GLOBAL DEFAULT   20 _ZN31AbstractBlockingKeyb
+   306: 00011d84     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QRegion5rectsEv
+   307: 0041d120     8 OBJECT  GLOBAL DEFAULT   24 _ZTI15QWSMouseHandler
+   308: 00011d90     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   309: 00032dd4     8 FUNC    WEAK   DEFAULT   12 _ZN12TslibHandler6resumeE
+   310: 000311d8   108 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   311: 0041c490    16 OBJECT  GLOBAL DEFAULT   20 _ZN12TslibHandler16static
+   312: 00032dc4     4 FUNC    WEAK   DEFAULT   12 _ZN15QWSMouseHandler9cali
+   313: 00011d9c     0 FUNC    GLOBAL DEFAULT  UND _ZNK19QScreenDriverPlugin
+   314: 00026d48    72 FUNC    WEAK   DEFAULT   12 _ZN7QStringD1Ev
+   315: 000300c0     8 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   316: 00011da8     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString10startsWithE
+   317: 00026954    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   318: 000269e0    44 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   319: 0002e29c     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N21iMX508KeyboardH
+   320: 0041c1c8    16 OBJECT  GLOBAL DEFAULT   20 _ZN26iMX508KeyboardDriver
+   321: 00031148    72 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   322: 000268c8    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   323: 00011db4     0 FUNC    GLOBAL DEFAULT  UND _ZN18QMouseDriverPluginD2
+   324: 00011dc0     0 FUNC    GLOBAL DEFAULT  UND _ZN15QWSMouseHandlerD2Ev
+   325: 00011dcc     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QStringeqERK13QLatin
+   326: 00011dd8     0 FUNC    GLOBAL DEFAULT  UND poll@GLIBC_2.4 (4)
+   327: 0041c070    12 OBJECT  GLOBAL DEFAULT   20 _ZTI24iMX508ScreenDriverP
+   328: 0002aaa8    20 FUNC    WEAK   DEFAULT   12 _ZN8QPointerI7QObjectED1E
+   329: 00029234   388 FUNC    WEAK   DEFAULT   12 _ZN4QMapI7QString8QVarian
+   330: 00032a08    44 FUNC    GLOBAL DEFAULT   12 _ZNK20TslibDispatchHandle
+   331: 00011de4     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData11free_helpe
+   332: 00011df0     0 FUNC    GLOBAL DEFAULT  UND _ZN9Affiliate7getNameEv
+   333: 00011dfc     0 FUNC    GLOBAL DEFAULT  UND _ZN6QTimerC1EP7QObject
+   334: 00011e08     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString5splitERKS_NS
+   335: 0002e190    68 FUNC    WEAK   DEFAULT   12 _ZN26iMX508KeyboardDriver
+   336: 00033674   204 FUNC    GLOBAL DEFAULT   12 __libc_csu_init
+   337: 0002e6cc     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N31AbstractBlockin
+   338: 0002a860   440 FUNC    GLOBAL DEFAULT   12 _ZNK24iMX508ScreenDriverP
+   339: 0002ac90     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N12iMX508ScreenD1E
+   340: 0002ab98    48 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen21waitFo
+   341: 0040c340    20 OBJECT  GLOBAL DEFAULT   14 _ZTS17TslibDriverPlugin
+   342: 00011e14     0 FUNC    GLOBAL DEFAULT  UND _ZNK8QVariant8toDoubleEPb
+   343: 000316a4     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_NK17TslibDriverPlu
+   344: 000313f8    60 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPluginD2E
+   345: 00011e20     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11mapToDevice
+   346: 0041fe80     1 OBJECT  GLOBAL DEFAULT   24 qCleanupResources_certifi
+   347: 00026900    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   348: 00011e2c     0 FUNC    GLOBAL DEFAULT  UND _ZN9QSettings6removeERK7Q
+   349: 00011e38     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_catch@CXXABI_1.3 (2)
+   350: 00028cf0    76 FUNC    WEAK   DEFAULT   12 _ZN11QStringListD1Ev
+   351: 00032ba4    44 FUNC    GLOBAL DEFAULT   12 _ZNK18TslibActualHandler1
+   352: 0041c478    12 OBJECT  GLOBAL DEFAULT   20 _ZTI18TslibActualHandler
+   353: 00011e44     0 FUNC    GLOBAL DEFAULT  UND _ZN9QSettingsD1Ev
+   354: 00011e50     0 FUNC    GLOBAL DEFAULT  UND _ZN9QMetaType12registerTy
+   355: 0002a450    44 FUNC    GLOBAL DEFAULT   12 _Z27qCleanupResources_res
+   356: 00011e5c     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen14shut
+   357: 00011e68     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   358: 00011e74     0 FUNC    GLOBAL DEFAULT  UND __aeabi_atexit@CXXABI_ARM_1.3.3 (7)
+   359: 0002e854   384 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   360: 00011e80     0 FUNC    GLOBAL DEFAULT  UND _ZN9QListData6detachEi
+   361: 00031588     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N17TslibDriverPlug
+   362: 00031e8c   120 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler9a
+   363: 0041c1a0    32 OBJECT  GLOBAL DEFAULT   20 _ZTI12iMX508Screen
+   364: 00011e8c     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTextStreamlsEi
+   365: 00011e98     0 FUNC    GLOBAL DEFAULT  UND _ZN18QWSKeyboardHandler15
+   366: 00011ea4     0 FUNC    GLOBAL DEFAULT  UND __cxa_rethrow@CXXABI_1.3 (2)
+   367: 00011eb0     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegExpC1ERK7QStringN
+   368: 0040bd00    15 OBJECT  GLOBAL DEFAULT   14 _ZTS12iMX508Screen
+   369: 0002ab44    40 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen19unforc
+   370: 00026cb4   148 FUNC    WEAK   DEFAULT   12 _ZN5QListI5QHashI7QString
+   371: 00032b34    52 FUNC    WEAK   DEFAULT   12 _ZN20TslibDispatchHandler
+   372: 00011ebc     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13mapFromDevi
+   373: 00030f04   100 FUNC    WEAK   DEFAULT   12 _ZNK5QHashIi15QHashDummyV
+   374: 000116ec     0 FUNC    GLOBAL DEFAULT   10 _init
+   375: 0002dea8     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_NK26iMX508Keyboard
+   376: 0041d128    44 OBJECT  GLOBAL DEFAULT   24 _ZTVN10__cxxabiv120__si_c@CXXABI_1.3 (2)
+   377: 000318b4   108 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandlerD1
+   378: 00011ec8     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject11qt_metacastE
+   379: 00026a0c   208 FUNC    WEAK   DEFAULT   12 _ZN5QListI8BookmarkE4free
+   380: 00030098    40 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   381: 00011ed4     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen7conne
+   382: 00011ee0     0 FUNC    GLOBAL DEFAULT  UND _ZN13QNetworkProxyC1Ev
+   383: 0002dac8   104 FUNC    WEAK   DEFAULT   12 _ZNK7QScreen10subScreensE
+   384: 0002e9d4  1316 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   385: 00026e2c    88 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   386: 0041c41c    12 OBJECT  GLOBAL DEFAULT   20 _ZTI20TslibDispatchHandle
+   387: 00011eec     0 FUNC    GLOBAL DEFAULT  UND _ZN16VolumeShortcoverC1Ev
+   388: 00026d90    84 FUNC    WEAK   DEFAULT   12 _ZN5QHashI7QStringS0_ED1E
+   389: 00011ef8     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen7resto
+   390: 0002e544   392 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   391: 0041d158    36 OBJECT  GLOBAL DEFAULT   24 _ZTV16VolumeShortcover
+   392: 00011f04     0 FUNC    GLOBAL DEFAULT  UND _ZN16QKbdDriverPluginC2EP
+   393: 0002e40c    12 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   394: 00026edc   452 FUNC    WEAK   DEFAULT   12 _ZN5QListI6VolumeE13detac
+   395: 00026990     4 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   396: 000280b8   512 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   397: 00011f10     0 FUNC    GLOBAL DEFAULT  UND _ZN12QApplication4execEv
+   398: 0002e034    28 FUNC    GLOBAL DEFAULT   12 _ZN21iMX508KeyboardHandle
+   399: 00011f1c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13supportsDep
+   400: 00011f28     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegExpD1Ev
+   401: 0002b9e0    56 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen10forceF
+   402: 00011f34     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen5blank
+   403: 00031190    36 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   404: 000313b4     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N17TslibDriverPlug
+   405: 00011f40     0 FUNC    GLOBAL DEFAULT  UND _ZN15QSocketNotifier10set
+   406: 00011f4c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen11mapToDevice
+   407: 00011f58     0 FUNC    GLOBAL DEFAULT  UND _ZN11EventEngine14sharedI
+   408: 00011f64     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString8toDoubleEPb
+   409: 00011f70     0 FUNC    GLOBAL DEFAULT  UND _ZN11QMetaObject8activate
+   410: 00011f7c     0 FUNC    GLOBAL DEFAULT  UND unsetenv@GLIBC_2.4 (4)
+   411: 00011f88     0 FUNC    GLOBAL DEFAULT  UND strcmp@GLIBC_2.4 (4)
+   412: 00011f94     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject11eventFilterE
+   413: 0002e14c    60 FUNC    WEAK   DEFAULT   12 _ZN26iMX508KeyboardDriver
+   414: 000278e0   488 FUNC    WEAK   DEFAULT   12 _ZN5QListI8BookmarkE13det
+   415: 00011fa0     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13createSurfa
+   416: 0002e08c    60 FUNC    GLOBAL DEFAULT   12 _ZN21iMX508KeyboardHandle
+   417: 0041d17c    20 OBJECT  GLOBAL DEFAULT   24 _ZN7QString11shared_nullE
+   418: 00033760    16 OBJECT  WEAK   DEFAULT   14 _ZTV6Device
+   419: 0002e3e8    16 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   420: 0041d190    72 OBJECT  GLOBAL DEFAULT   24 _ZN8QMapData11shared_null
+   421: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_cancel@GLIBC_2.4 (5)
+   422: 00011fac     0 FUNC    GLOBAL DEFAULT  UND __cxa_pure_virtual@CXXABI_1.3 (2)
+   423: 00011fb8     0 FUNC    GLOBAL DEFAULT  UND _ZN6QTimerD1Ev
+   424: 0002ab6c    44 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen17forceO
+   425: 00011fc4     0 FUNC    GLOBAL DEFAULT  UND _Z25qt_translateRawTouchE
+   426: 00011fd0     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData14detach_hel
+   427: 0041d1d8    20 OBJECT  GLOBAL DEFAULT   24 _ZTV11GAEventType
+   428: 0041c3d0    16 OBJECT  GLOBAL DEFAULT   20 _ZN20TslibDispatchHandler
+   429: 00011fdc     0 FUNC    GLOBAL DEFAULT  UND memset@GLIBC_2.4 (4)
+   430: 0002abc8     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N12iMX508Screen14s
+   431: 000313bc    60 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPluginD1E
+   432: 00011fe8     0 FUNC    GLOBAL DEFAULT  UND _ZN14QLinuxFbScreen4saveE
+   433: 0002e2e8   236 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   434: 0002dc88     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N26iMX508KeyboardD
+   435: 0041c3b8    12 OBJECT  GLOBAL DEFAULT   20 _ZTI17TslibDriverPlugin
+   436: 00032d24    44 FUNC    GLOBAL DEFAULT   12 _ZNK12TslibHandler10metaO
+   437: 00029950   452 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   438: 00027f54   356 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   439: 00011ff4     0 FUNC    GLOBAL DEFAULT  UND _ZN6VolumeD1Ev
+   440: 00012000     0 FUNC    GLOBAL DEFAULT  UND _ZN11QVectorData4freeEPS_
+   441: 0001200c     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_cleanup@CXXABI_1.3 (2)
+   442: 00032ae0    84 FUNC    GLOBAL DEFAULT   12 _ZN20TslibDispatchHandler
+   443: 00012018     0 FUNC    GLOBAL DEFAULT  UND _ZNSs4_Rep10_M_destroyERK@GLIBCXX_3.4 (6)
+   444: 00028758   412 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   445: 00012024     0 FUNC    GLOBAL DEFAULT  UND _ZN8QVariantC1ERKS_
+   446: 0041d1f0    32 OBJECT  GLOBAL DEFAULT   24 _ZTI18QMouseDriverPlugin
+   447: 00030f6c   100 FUNC    WEAK   DEFAULT   12 _ZN4QSetIiED1Ev
+   448: 00012030     0 FUNC    GLOBAL DEFAULT  UND _ZN9QSettingsC1EP7QObject
+   449: 0001203c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject5eventEP6QEven
+   450: 0002e260    60 FUNC    WEAK   DEFAULT   12 _ZN21iMX508KeyboardHandle
+   451: 0041cb38     0 NOTYPE  WEAK   DEFAULT   23 data_start
+   452: 0002a858     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_NK24iMX508ScreenDr
+   453: 00012048     0 FUNC    GLOBAL DEFAULT  UND _Z21qRegisterResourceData
+   454: 00027ac8   528 FUNC    WEAK   DEFAULT   12 _ZN5QListI5QHashI7QString
+   455: 0002ac98   148 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508ScreenD1Ev
+   456: 00012054     0 FUNC    GLOBAL DEFAULT  UND _ZN15SocialEventTypeC1Ei
+   457: 00031840   116 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandlerD0
+   458: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZN7QString16codecForCStr
+   459: 0040bfd8    24 OBJECT  GLOBAL DEFAULT   14 _ZTS21iMX508KeyboardHandl
+   460: 00012060     0 FUNC    GLOBAL DEFAULT  UND _ZN9QListData6appendEv
+   461: 0002bb58     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N12iMX508Screen10i
+   462: 0002aac0    12 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen12unforc
+   463: 0001206c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QRegExp7indexInERK7Q
+   464: 00012078     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegionC1ERK5QRectNS_
+   465: 00012084     0 FUNC    GLOBAL DEFAULT  UND _ZN9QDateTimeD1Ev
+   466: 0002da64    84 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen11qt_met
+   467: 00028d3c   312 FUNC    WEAK   DEFAULT   12 _ZN5QListI7QStringE13deta
+   468: 00012090     0 FUNC    GLOBAL DEFAULT  UND _ZN7QStringaSERKS_
+   469: 0001209c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen11haltUpdatesE
+   470: 000120a8     0 FUNC    GLOBAL DEFAULT  UND _ZN16QKbdDriverPlugin11qt
+   471: 000120b4     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4 (4)
+   472: 000120c0     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen9solidFillERK6
+   473: 000120cc     0 FUNC    GLOBAL DEFAULT  UND _ZN9QDateTimeC1ERKS_
+   474: 000120d8     0 FUNC    GLOBAL DEFAULT  UND _ZN18QWSKeyboardHandlerC2
+   475: 00031590   276 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPlugin6cr
+   476: 000120e4     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString7toAsciiEv
+   477: 0041d210    36 OBJECT  GLOBAL DEFAULT   24 _ZTV10Shortcover
+   478: 000120f0     0 FUNC    GLOBAL DEFAULT  UND _ZN9QIODevice7readAllEv
+   479: 000255cc  1376 FUNC    GLOBAL DEFAULT   12 _Z15printStackTracev
+   480: 000120fc     0 FUNC    GLOBAL DEFAULT  UND _ZN9__gnu_cxx18__exchange@GLIBCXX_3.4 (6)
+   481: 00012108     0 FUNC    GLOBAL DEFAULT  UND _ZN7QScreen12memoryNeeded
+   482: 00012114     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QRegion7isEmptyEv
+   483: 0002e204     4 FUNC    GLOBAL DEFAULT   12 _ZN21iMX508KeyboardHandle
+   484: 00012120     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString11toLocal8Bit
+   485: 0002abec     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N12iMX508ScreenD0E
+   486: 0002d8b4   108 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen11qt_met
+   487: 00032ef4   260 FUNC    WEAK   DEFAULT   12 _ZN12TslibHandlerD0Ev
+   488: 0001212c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QString4freeEPNS_4Dat
+   489: 0040c204    34 OBJECT  GLOBAL DEFAULT   14 _ZTS31AbstractBlockingKey
+   490: 00012138     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString5toIntEPbi
+   491: 00030f68     4 FUNC    WEAK   DEFAULT   12 _ZN5QHashIi15QHashDummyVa
+   492: 00028e74   840 FUNC    WEAK   DEFAULT   12 _ZN5QListI7QStringE6appen
+   493: 00012144     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject16disconnectNo
+   494: 00012150     0 FUNC    GLOBAL DEFAULT  UND _ZN18QMouseDriverPlugin11
+   495: 0002dac0     8 FUNC    WEAK   DEFAULT   12 _ZN7QScreen23pixmapLinest
+   496: 0001215c     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   497: 00029b14   392 FUNC    WEAK   DEFAULT   12 _ZN6QDebugD1Ev
+   498: 0003111c    44 FUNC    GLOBAL DEFAULT   12 _ZNK31AbstractBlockingKey
+   499: 0002e3f8    20 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   500: 00012168     0 FUNC    GLOBAL DEFAULT  UND _ZN7QThread5startENS_8Pri
+   501: 0002ad2c   148 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508ScreenD2Ev
+   502: 00012174     0 FUNC    GLOBAL DEFAULT  UND _ZN19QScreenDriverPluginC
+   503: 00012180     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegionD1Ev
+   504: 0001218c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QRegion5uniteERK5QRe
+   505: 00012198     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13mapFromDevi
+   506: 000121a4     0 FUNC    GLOBAL DEFAULT  UND _ZN11QTouchEvent10TouchPo
+   507: 0002715c  1196 FUNC    WEAK   DEFAULT   12 _ZN7ContentC2ERKS_
+   508: 000121b0     0 FUNC    GLOBAL DEFAULT  UND ts_read_raw
+   509: 000121bc     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13mapFromDevi
+   510: 00031920   108 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandlerD2
+   511: 0041c258    96 OBJECT  GLOBAL DEFAULT   20 _ZTV21iMX508KeyboardHandl
+   512: 0002f4a4  3060 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   513: 000121c8     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13mapFromDevi
+   514: 00031314    84 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   515: 000121d4     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QString3argERKS_iRK5
+   516: 0002a47c    44 FUNC    GLOBAL DEFAULT   12 _Z24qInitResources_resour
+   517: 000121e0     0 FUNC    GLOBAL DEFAULT  UND _ZN7QObject11qt_metacallE
+   518: 0041fe9c     0 NOTYPE  GLOBAL DEFAULT  ABS _bss_end__
+   519: 000121ec     0 FUNC    GLOBAL DEFAULT  UND __aeabi_uidivmod@GCC_3.5 (3)
+   520: 0041d238    16 OBJECT  GLOBAL DEFAULT   24 _ZN16QKbdDriverPlugin16st
+   521: 0041d248    32 OBJECT  GLOBAL DEFAULT   24 _ZTI16QKbdDriverPlugin
+   522: 00031470   220 FUNC    GLOBAL DEFAULT   12 _Z30qt_plugin_instance_ts
+   523: 000121f8     0 FUNC    GLOBAL DEFAULT  UND _ZN19QScreenDriverPlugin1
+   524: 00032ddc     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N12TslibHandler7su
+   525: 00012204     0 FUNC    GLOBAL DEFAULT  UND _Z9qBadAllocv
+   526: 00012210     0 FUNC    GLOBAL DEFAULT  UND _ZN6QTimer4stopEv
+   527: 00033778     8 OBJECT  WEAK   DEFAULT   14 _ZTS6Device
+   528: 00033758     4 OBJECT  GLOBAL DEFAULT   14 _IO_stdin_used
+   529: 0001221c     0 FUNC    GLOBAL DEFAULT  UND _ZNK18QMouseDriverPlugin1
+   530: 00012228     0 FUNC    GLOBAL DEFAULT  UND _ZN9QHashData6rehashEi
+   531: 00012234     0 FUNC    GLOBAL DEFAULT  UND read@GLIBC_2.4 (5)
+   532: 00032bd0    64 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler18
+   533: 00012240     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen13createSurfa
+   534: 00031f04  2128 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler4o
+   535: 0041d268    24 OBJECT  GLOBAL DEFAULT   24 _ZN9QListData11shared_nul
+   536: 0001224c     0 FUNC    GLOBAL DEFAULT  UND _ZNK7QScreen12isInterlace
+   537: 00012258     0 FUNC    GLOBAL DEFAULT  UND usleep@GLIBC_2.4 (4)
+   538: 0002e144     8 FUNC    WEAK   DEFAULT   12 _ZThn8_N26iMX508KeyboardD
+   539: 0041fe9c     0 NOTYPE  GLOBAL DEFAULT  ABS __end__
+   540: 00012264     0 FUNC    GLOBAL DEFAULT  UND _ZNSsD1Ev@GLIBCXX_3.4 (6)
+   541: 0041fe78     1 OBJECT  GLOBAL DEFAULT   24 qCleanupResources_resourc
+   542: 00027e84   208 FUNC    WEAK   DEFAULT   12 _Z24qMetaTypeConstructHel
+   543: 00032c10    72 FUNC    GLOBAL DEFAULT   12 _ZN18TslibActualHandler11
+   544: 00026938    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   545: 0040c48c    23 OBJECT  GLOBAL DEFAULT   14 _ZTS20TslibDispatchHandle
+   546: 00012270     0 FUNC    GLOBAL DEFAULT  UND _ZN11QMetaObject11changeG
+   547: 0002bab4   164 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen8setDirt
+   548: 0002d224   856 FUNC    GLOBAL DEFAULT   12 _ZN12iMX508Screen22setFul
+   549: 0003154c    60 FUNC    GLOBAL DEFAULT   12 _ZN17TslibDriverPluginC2E
+   550: 0002e418    92 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   551: 0001227c     0 FUNC    GLOBAL DEFAULT  UND _ZN7QRegionaSERKS_
+   552: 0002a510    36 FUNC    GLOBAL DEFAULT   12 _Z27qInitResources_certif
+   553: 00012288     0 FUNC    GLOBAL DEFAULT  UND ioctl@GLIBC_2.4 (4)
+   554: 0002e53c     8 FUNC    GLOBAL DEFAULT   12 _ZThn8_N31AbstractBlockin
+   555: 0041c430    16 OBJECT  GLOBAL DEFAULT   20 _ZN18TslibActualHandler16
+   556: 000268e4    28 FUNC    WEAK   DEFAULT   12 _Z21qMetaTypeDeleteHelper
+   557: 00012294     0 FUNC    GLOBAL DEFAULT  UND _ZN8ScObjectC2Ev
+   558: 000122a0     0 FUNC    GLOBAL DEFAULT  UND _ZN16QKbdDriverPlugin11qt
+   559: 000311b4    36 FUNC    GLOBAL DEFAULT   12 _ZN31AbstractBlockingKeyb
+   560: 000122ac     0 FUNC    GLOBAL DEFAULT  UND _ZN11QVectorData8allocate
+   561: 000122b8     0 FUNC    GLOBAL DEFAULT  UND _ZN18QWSKeyboardHandler15
+   562: 0041c360    88 OBJECT  GLOBAL DEFAULT   20 _ZTV17TslibDriverPlugin
+
+Histogram for bucket list length (total of 1009 buckets):
+ Length  Number     % of total  Coverage
+      0  570        ( 56.5%)
+      1  327        ( 32.4%)     58.2%
+      2  101        ( 10.0%)     94.1%
+      3  11         (  1.1%)    100.0%
+
+Version symbols section '.gnu.version' contains 563 entries:
+ Addr: 0000000000010874  Offset: 0x008874  Link: 4 (.dynsym)
+  000:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  004:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  008:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  00c:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  010:   1 (*global*)      1 (*global*)      0 (*local*)       0 (*local*)    
+  014:   1 (*global*)      1 (*global*)      1 (*global*)      2 (CXXABI_1.3) 
+  018:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  01c:   3 (GCC_3.5)       0 (*local*)       0 (*local*)       0 (*local*)    
+  020:   1 (*global*)      0 (*local*)       0 (*local*)       4 (GLIBC_2.4)  
+  024:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  028:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  02c:   0 (*local*)       0 (*local*)       0 (*local*)       1 (*global*)   
+  030:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  034:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  038:   0 (*local*)       1 (*global*)      0 (*local*)       3 (GCC_3.5)    
+  03c:   3 (GCC_3.5)       0 (*local*)       1 (*global*)      1 (*global*)   
+  040:   4 (GLIBC_2.4)     1 (*global*)      1 (*global*)      1 (*global*)   
+  044:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  048:   1 (*global*)      0 (*local*)       1 (*global*)      5 (GLIBC_2.4)  
+  04c:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  050:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  054:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  058:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  05c:   1 (*global*)      1 (*global*)      2 (CXXABI_1.3)    1 (*global*)   
+  060:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  064:   1 (*global*)      6 (GLIBCXX_3.4)   0 (*local*)       0 (*local*)    
+  068:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  06c:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  070:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  074:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  078:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  07c:   1 (*global*)      0 (*local*)       2 (CXXABI_1.3)    0 (*local*)    
+  080:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  084:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  088:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  08c:   0 (*local*)       0 (*local*)       1 (*global*)      0 (*local*)    
+  090:   1 (*global*)      0 (*local*)       4 (GLIBC_2.4)     1 (*global*)   
+  094:   0 (*local*)       0 (*local*)       1 (*global*)      0 (*local*)    
+  098:   2 (CXXABI_1.3)    1 (*global*)      0 (*local*)       1 (*global*)   
+  09c:   1 (*global*)      1 (*global*)      2 (CXXABI_1.3)    1 (*global*)   
+  0a0:   1 (*global*)      0 (*local*)       0 (*local*)       0 (*local*)    
+  0a4:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  0a8:   4 (GLIBC_2.4)     0 (*local*)       1 (*global*)      1 (*global*)   
+  0ac:   0 (*local*)       0 (*local*)       1 (*global*)      0 (*local*)    
+  0b0:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  0b4:   5 (GLIBC_2.4)     1 (*global*)      1 (*global*)      1 (*global*)   
+  0b8:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  0bc:   0 (*local*)       1 (*global*)      0 (*local*)       1 (*global*)   
+  0c0:   4 (GLIBC_2.4)     1 (*global*)      0 (*local*)       0 (*local*)    
+  0c4:   0 (*local*)       6 (GLIBCXX_3.4)   1 (*global*)      0 (*local*)    
+  0c8:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  0cc:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  0d0:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  0d4:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  0d8:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  0dc:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  0e0:   4 (GLIBC_2.4)     1 (*global*)      1 (*global*)      4 (GLIBC_2.4)  
+  0e4:   6 (GLIBCXX_3.4)   1 (*global*)      1 (*global*)      1 (*global*)   
+  0e8:   5 (GLIBC_2.4)     0 (*local*)       0 (*local*)       1 (*global*)   
+  0ec:   1 (*global*)      6 (GLIBCXX_3.4)   0 (*local*)       1 (*global*)   
+  0f0:   1 (*global*)      0 (*local*)       2 (CXXABI_1.3)    1 (*global*)   
+  0f4:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  0f8:   1 (*global*)      0 (*local*)       1 (*global*)      6 (GLIBCXX_3.4)
+  0fc:   0 (*local*)       2 (CXXABI_1.3)    1 (*global*)      0 (*local*)    
+  100:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  104:   1 (*global*)      5 (GLIBC_2.4)     0 (*local*)       1 (*global*)   
+  108:   0 (*local*)       0 (*local*)       1 (*global*)      0 (*local*)    
+  10c:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  110:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  114:   1 (*global*)      0 (*local*)       0 (*local*)       0 (*local*)    
+  118:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  11c:   0 (*local*)       0 (*local*)       0 (*local*)       0 (*local*)    
+  120:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  124:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  128:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  12c:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  130:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  134:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  138:   1 (*global*)      0 (*local*)       1 (*global*)      1 (*global*)   
+  13c:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  140:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  144:   0 (*local*)       0 (*local*)       4 (GLIBC_2.4)     1 (*global*)   
+  148:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  14c:   0 (*local*)       0 (*local*)       0 (*local*)       1 (*global*)   
+  150:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  154:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  158:   1 (*global*)      0 (*local*)       1 (*global*)      1 (*global*)   
+  15c:   0 (*local*)       2 (CXXABI_1.3)    1 (*global*)      1 (*global*)   
+  160:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  164:   0 (*local*)       0 (*local*)       7 (CXXABI_ARM_1.3.3)      1 (*global*)   
+  168:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  16c:   0 (*local*)       0 (*local*)       2 (CXXABI_1.3)    0 (*local*)    
+  170:   1 (*global*)      1 (*global*)      1 (*global*)      1 (*global*)   
+  174:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  178:   2 (CXXABI_1.3)    1 (*global*)      0 (*local*)       1 (*global*)   
+  17c:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  180:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  184:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  188:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  18c:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  190:   0 (*local*)       1 (*global*)      0 (*local*)       1 (*global*)   
+  194:   1 (*global*)      0 (*local*)       0 (*local*)       0 (*local*)    
+  198:   0 (*local*)       0 (*local*)       4 (GLIBC_2.4)     4 (GLIBC_2.4)  
+  19c:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  1a0:   1 (*global*)      0 (*local*)       1 (*global*)      1 (*global*)   
+  1a4:   0 (*local*)       5 (GLIBC_2.4)     2 (CXXABI_1.3)    0 (*local*)    
+  1a8:   1 (*global*)      0 (*local*)       0 (*local*)       0 (*local*)    
+  1ac:   1 (*global*)      4 (GLIBC_2.4)     1 (*global*)      1 (*global*)   
+  1b0:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  1b4:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  1b8:   0 (*local*)       2 (CXXABI_1.3)    1 (*global*)      6 (GLIBCXX_3.4)
+  1bc:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  1c0:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  1c4:   1 (*global*)      0 (*local*)       1 (*global*)      1 (*global*)   
+  1c8:   0 (*local*)       1 (*global*)      0 (*local*)       1 (*global*)   
+  1cc:   0 (*local*)       1 (*global*)      1 (*global*)      0 (*local*)    
+  1d0:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  1d4:   0 (*local*)       0 (*local*)       0 (*local*)       4 (GLIBC_2.4)  
+  1d8:   0 (*local*)       0 (*local*)       0 (*local*)       1 (*global*)   
+  1dc:   0 (*local*)       0 (*local*)       0 (*local*)       1 (*global*)   
+  1e0:   6 (GLIBCXX_3.4)   0 (*local*)       0 (*local*)       1 (*global*)   
+  1e4:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  1e8:   0 (*local*)       1 (*global*)      0 (*local*)       1 (*global*)   
+  1ec:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  1f0:   0 (*local*)       1 (*global*)      1 (*global*)      1 (*global*)   
+  1f4:   0 (*local*)       1 (*global*)      0 (*local*)       0 (*local*)    
+  1f8:   0 (*local*)       0 (*local*)       0 (*local*)       1 (*global*)   
+  1fc:   0 (*local*)       0 (*local*)       1 (*global*)      1 (*global*)   
+  200:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  204:   1 (*global*)      0 (*local*)       1 (*global*)      3 (GCC_3.5)    
+  208:   0 (*local*)       0 (*local*)       1 (*global*)      0 (*local*)    
+  20c:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  210:   1 (*global*)      0 (*local*)       0 (*local*)       5 (GLIBC_2.4)  
+  214:   1 (*global*)      0 (*local*)       1 (*global*)      0 (*local*)    
+  218:   0 (*local*)       4 (GLIBC_2.4)     1 (*global*)      1 (*global*)   
+  21c:   6 (GLIBCXX_3.4)   1 (*global*)      1 (*global*)      1 (*global*)   
+  220:   1 (*global*)      1 (*global*)      0 (*local*)       1 (*global*)   
+  224:   1 (*global*)      1 (*global*)      1 (*global*)      0 (*local*)    
+  228:   1 (*global*)      4 (GLIBC_2.4)     1 (*global*)      1 (*global*)   
+  22c:   1 (*global*)      0 (*local*)       0 (*local*)       1 (*global*)   
+  230:   0 (*local*)       0 (*local*)       1 (*global*)   
+
+Version needs section '.gnu.version_r' contains 4 entries:
+ Addr: 0x0000000000010cdc  Offset: 0x008cdc  Link: 5 (.dynstr)
+  000000: Version: 1  File: libpthread.so.0  Cnt: 1
+  0x0010:   Name: GLIBC_2.4  Flags: none  Version: 5
+  0x0020: Version: 1  File: libc.so.6  Cnt: 1
+  0x0030:   Name: GLIBC_2.4  Flags: none  Version: 4
+  0x0040: Version: 1  File: libgcc_s.so.1  Cnt: 1
+  0x0050:   Name: GCC_3.5  Flags: none  Version: 3
+  0x0060: Version: 1  File: libstdc++.so.6  Cnt: 3
+  0x0070:   Name: CXXABI_ARM_1.3.3  Flags: none  Version: 7
+  0x0080:   Name: GLIBCXX_3.4  Flags: none  Version: 6
+  0x0090:   Name: CXXABI_1.3  Flags: none  Version: 2
+
+Notes at offset 0x00000148 with length 0x00000020:
+  Owner                 Data size	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 2.6.16
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "5TE"
+  Tag_CPU_arch: v5TE
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-1
+  Tag_FP_arch: VFPv2
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_align_preserved: 8-byte, except leaf SP
+  Tag_ABI_enum_size: int
+  Tag_ABI_HardFP_use: SP and DP
+  Tag_DIV_use: Not allowed

@@ -1,0 +1,460 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x9848
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          26136 (bytes into file)
+  Flags:                             0x5000002, has entry point, Version5 EABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         8
+  Size of section headers:           40 (bytes)
+  Number of section headers:         27
+  Section header string table index: 26
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00008134 000134 000013 00   A  0   0  1
+  [ 2] .note.ABI-tag     NOTE            00008148 000148 000020 00   A  0   0  4
+  [ 3] .hash             HASH            00008168 000168 0003ac 04   A  4   0  4
+  [ 4] .dynsym           DYNSYM          00008514 000514 000530 10   A  5   1  4
+  [ 5] .dynstr           STRTAB          00008a44 000a44 0007a6 00   A  0   0  1
+  [ 6] .gnu.version      VERSYM          000091ea 0011ea 0000a6 02   A  4   0  2
+  [ 7] .gnu.version_r    VERNEED         00009290 001290 0000b0 00   A  5   4  4
+  [ 8] .rel.dyn          REL             00009340 001340 000038 08   A  4   0  4
+  [ 9] .rel.plt          REL             00009378 001378 0001e0 08   A  4  11  4
+  [10] .init             PROGBITS        00009558 001558 00000c 00  AX  0   0  4
+  [11] .plt              PROGBITS        00009564 001564 0002e4 04  AX  0   0  4
+  [12] .text             PROGBITS        00009848 001848 004130 00  AX  0   0  4
+  [13] .fini             PROGBITS        0000d978 005978 000008 00  AX  0   0  4
+  [14] .rodata           PROGBITS        0000d980 005980 000278 00   A  0   0  4
+  [15] .ARM.extab        PROGBITS        0000dbf8 005bf8 0005a0 00   A  0   0  4
+  [16] .ARM.exidx        ARM_EXIDX       0000e198 006198 0000d0 00  AL 12   0  4
+  [17] .init_array       INIT_ARRAY      00016268 006268 000008 00  WA  0   0  4
+  [18] .fini_array       FINI_ARRAY      00016270 006270 000004 00  WA  0   0  4
+  [19] .jcr              PROGBITS        00016274 006274 000004 00  WA  0   0  4
+  [20] .dynamic          DYNAMIC         00016278 006278 000150 08  WA  5   0  4
+  [21] .got              PROGBITS        000163c8 0063c8 000100 04  WA  0   0  4
+  [22] .data             PROGBITS        000164c8 0064c8 000014 00  WA  0   0  4
+  [23] .bss              NOBITS          000164e0 0064dc 000384 00  WA  0   0  8
+  [24] .ARM.attributes   ARM_ATTRIBUTES  00000000 0064dc 00002b 00      0   0  1
+  [25] .comment          PROGBITS        00000000 006507 00002b 00      0   0  1
+  [26] .shstrtab         STRTAB          00000000 006532 0000e4 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x006198 0x0000e198 0x0000e198 0x000d0 0x000d0 R   0x4
+  PHDR           0x000034 0x00008034 0x00008034 0x00100 0x00100 R E 0x4
+  INTERP         0x000134 0x00008134 0x00008134 0x00013 0x00013 R   0x1
+      [Requesting program interpreter: /lib/ld-linux.so.3]
+  LOAD           0x000000 0x00008000 0x00008000 0x06268 0x06268 R E 0x8000
+  LOAD           0x006268 0x00016268 0x00016268 0x00274 0x005fc RW  0x8000
+  DYNAMIC        0x006278 0x00016278 0x00016278 0x00150 0x00150 RW  0x4
+  NOTE           0x000148 0x00008148 0x00008148 0x00020 0x00020 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     
+   02     .interp 
+   03     .interp .note.ABI-tag .hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .ARM.extab .ARM.exidx 
+   04     .init_array .fini_array .jcr .dynamic .got .data .bss 
+   05     .dynamic 
+   06     .note.ABI-tag 
+   07     
+
+Dynamic section at offset 0x6278 contains 37 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libiw.so.29]
+ 0x00000001 (NEEDED)                     Shared library: [libQtNetwork.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [libQtCore.so.4]
+ 0x00000001 (NEEDED)                     Shared library: [librt.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libfreetype.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libpng12.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libicuuc.so.46]
+ 0x00000001 (NEEDED)                     Shared library: [libicudata.so.46]
+ 0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x0000000f (RPATH)                      Library rpath: [/usr/local/Trolltech/QtEmbedded-4.8.0-arm/lib]
+ 0x0000000c (INIT)                       0x9558
+ 0x0000000d (FINI)                       0xd978
+ 0x00000019 (INIT_ARRAY)                 0x16268
+ 0x0000001b (INIT_ARRAYSZ)               8 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x16270
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x00000004 (HASH)                       0x8168
+ 0x00000005 (STRTAB)                     0x8a44
+ 0x00000006 (SYMTAB)                     0x8514
+ 0x0000000a (STRSZ)                      1958 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000015 (DEBUG)                      0x0
+ 0x00000003 (PLTGOT)                     0x163c8
+ 0x00000002 (PLTRELSZ)                   480 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x9378
+ 0x00000011 (REL)                        0x9340
+ 0x00000012 (RELSZ)                      56 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffe (VERNEED)                    0x9290
+ 0x6fffffff (VERNEEDNUM)                 4
+ 0x6ffffff0 (VERSYM)                     0x91ea
+ 0x00000000 (NULL)                       0x0
+
+Relocation section '.rel.dyn' at offset 0x1340 contains 7 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+000164c4  00004f15 R_ARM_GLOB_DAT    00000000   __gmon_start__
+000164e0  00000414 R_ARM_COPY        000164e0   _ZTVSt9basic_iosIcSt11
+000164f0  00000814 R_ARM_COPY        000164f0   _ZNSs4_Rep20_S_empty_r
+00016500  00000f14 R_ARM_COPY        00016500   _ZTTSt19basic_ostrings
+00016510  00001614 R_ARM_COPY        00016510   _ZTVSt15basic_streambu
+00016550  00002d14 R_ARM_COPY        00016550   _ZTVSt19basic_ostrings
+00016578  00003c14 R_ARM_COPY        00016578   _ZTVSt15basic_stringbu
+
+Relocation section '.rel.plt' at offset 0x1378 contains 60 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+000163d4  00000116 R_ARM_JUMP_SLOT   00009578   iw_extract_event_strea
+000163d8  00000216 R_ARM_JUMP_SLOT   00009584   __aeabi_atexit
+000163dc  00000316 R_ARM_JUMP_SLOT   00009590   iw_get_stats
+000163e0  00000516 R_ARM_JUMP_SLOT   0000959c   _ZNKSs7compareEPKc
+000163e4  00000616 R_ARM_JUMP_SLOT   000095a8   _ZN9__gnu_cxx18__excha
+000163e8  00000916 R_ARM_JUMP_SLOT   000095b4   free
+000163ec  00000a16 R_ARM_JUMP_SLOT   000095c0   _ZNSt8ios_baseC2Ev
+000163f0  00000b16 R_ARM_JUMP_SLOT   000095cc   iw_sockets_open
+000163f4  00000c16 R_ARM_JUMP_SLOT   000095d8   _ZNSt8ios_baseD2Ev
+000163f8  00000d16 R_ARM_JUMP_SLOT   000095e4   iw_init_event_stream
+000163fc  00000e16 R_ARM_JUMP_SLOT   000095f0   _ZNSs6assignEPKcj
+00016400  00001016 R_ARM_JUMP_SLOT   000095fc   exit
+00016404  00001116 R_ARM_JUMP_SLOT   00009608   printf
+00016408  00001316 R_ARM_JUMP_SLOT   00009614   puts
+0001640c  00001416 R_ARM_JUMP_SLOT   00009620   _ZNSsC1ERKSs
+00016410  00001516 R_ARM_JUMP_SLOT   0000962c   __aeabi_f2d
+00016414  00001716 R_ARM_JUMP_SLOT   00009638   memset
+00016418  00001816 R_ARM_JUMP_SLOT   00009644   _ZSt19__throw_logic_er
+0001641c  00001a16 R_ARM_JUMP_SLOT   00009650   _ZNKSt15basic_stringbu
+00016420  00001b16 R_ARM_JUMP_SLOT   0000965c   _ZNSs7reserveEj
+00016424  00001e16 R_ARM_JUMP_SLOT   00009668   _ZNSs4_Rep10_M_destroy
+00016428  00001f16 R_ARM_JUMP_SLOT   00009674   abort
+0001642c  00002216 R_ARM_JUMP_SLOT   00009680   iw_print_bitrate
+00016430  00002316 R_ARM_JUMP_SLOT   0000968c   ioctl
+00016434  00002416 R_ARM_JUMP_SLOT   00009698   system
+00016438  00002516 R_ARM_JUMP_SLOT   000096a4   _ZNSsC1ERKSsjj
+0001643c  00002616 R_ARM_JUMP_SLOT   000096b0   open
+00016440  00002716 R_ARM_JUMP_SLOT   000096bc   _ZNSs6appendERKSs
+00016444  00002916 R_ARM_JUMP_SLOT   000096c8   __cxa_end_cleanup
+00016448  00002a16 R_ARM_JUMP_SLOT   000096d4   fork
+0001644c  00002b16 R_ARM_JUMP_SLOT   000096e0   _ZNSs6appendEPKcj
+00016450  00002c16 R_ARM_JUMP_SLOT   000096ec   _ZNSsC1EPKcRKSaIcE
+00016454  00002f16 R_ARM_JUMP_SLOT   000096f8   __aeabi_fcmpeq
+00016458  00003016 R_ARM_JUMP_SLOT   00009704   _ZNSs6assignERKSs
+0001645c  00003116 R_ARM_JUMP_SLOT   00000000   pthread_cancel
+00016460  00003316 R_ARM_JUMP_SLOT   0000971c   _ZNSt9basic_iosIcSt11c
+00016464  00003416 R_ARM_JUMP_SLOT   00009728   iw_get_range_info
+00016468  00003716 R_ARM_JUMP_SLOT   00009734   ether_ntoa_r
+0001646c  00003816 R_ARM_JUMP_SLOT   00009740   _ZNSt6localeD1Ev
+00016470  00003916 R_ARM_JUMP_SLOT   0000974c   _ZNSs6assignEPKc
+00016474  00003a16 R_ARM_JUMP_SLOT   00009758   memcpy
+00016478  00003d16 R_ARM_JUMP_SLOT   00009764   malloc
+0001647c  00003e16 R_ARM_JUMP_SLOT   00009770   strlen
+00016480  00003f16 R_ARM_JUMP_SLOT   0000977c   usleep
+00016484  00004016 R_ARM_JUMP_SLOT   00009788   _ZNSsD1Ev
+00016488  00004116 R_ARM_JUMP_SLOT   00009794   _ZNSs4_Rep9_S_createEj
+0001648c  00004316 R_ARM_JUMP_SLOT   000097a0   _ZNSo9_M_insertIdEERSo
+00016490  00004416 R_ARM_JUMP_SLOT   000097ac   __gxx_personality_v0
+00016494  00004516 R_ARM_JUMP_SLOT   000097b8   _ZNSolsEi
+00016498  00004616 R_ARM_JUMP_SLOT   000097c4   __errno_location
+0001649c  00004716 R_ARM_JUMP_SLOT   000097d0   strncpy
+000164a0  00004816 R_ARM_JUMP_SLOT   000097dc   memcmp
+000164a4  00004916 R_ARM_JUMP_SLOT   000097e8   _ZNSt9basic_iosIcSt11c
+000164a8  00004c16 R_ARM_JUMP_SLOT   000097f4   getenv
+000164ac  00004d16 R_ARM_JUMP_SLOT   00009800   __libc_start_main
+000164b0  00004e16 R_ARM_JUMP_SLOT   0000980c   _ZNKSs4findEcj
+000164b4  00004f16 R_ARM_JUMP_SLOT   00000000   __gmon_start__
+000164b8  00005016 R_ARM_JUMP_SLOT   00009824   _ZNSt19basic_ostringst
+000164bc  00005116 R_ARM_JUMP_SLOT   00009830   _ZNSt6localeC1Ev
+000164c0  00005216 R_ARM_JUMP_SLOT   0000983c   _ZNSt15basic_streambuf
+
+Unwind table index '.ARM.exidx' at offset 0x6198 contains 26 entries:
+
+0x9848: 0x1 [cantunwind]
+
+0x98a8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0x98c4: @0xdbf8
+  Compact model 1
+  0xb1 0x08 pop {r3}
+  0x84 0x00 pop {r14}
+  0xb0      finish
+  0xb0      finish
+
+0x98f4: 0x80acb0b0
+  Compact model 0
+  0xac      pop {r4, r5, r6, r7, r8r14}
+  0xb0      finish
+  0xb0      finish
+
+0x996c: 0x80b108af
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xaf      pop {r4, r5, r6, r7, r8, r9, r10, r11r14}
+
+0x9a64: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x9b60: 0x8008a9b0
+  Compact model 0
+  0x08      vsp = vsp + 36
+  0xa9      pop {r4, r5r14}
+  0xb0      finish
+
+0x9be8: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x9c6c: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0x9cdc: 0x80b108a9
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xa9      pop {r4, r5r14}
+
+0x9e0c: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0x9e6c: @0xdc04
+  Personality routine: 0x97ac
+
+0x9ed4: 0x80b21daa
+  Compact model 0
+  0xb2 0x1d vsp = vsp + 632
+  0xaa      pop {r4, r5, r6r14}
+
+0x9fb8: @0xdc20
+  Personality routine: 0x97ac
+
+0xa098: @0xdc38
+  Personality routine: 0x97ac
+
+0xa254: @0xdc5c
+  Personality routine: 0x97ac
+
+0xa97c: @0xdd30
+  Personality routine: 0x97ac
+
+0xcc18: 0x80aab0b0
+  Compact model 0
+  0xaa      pop {r4, r5, r6r14}
+  0xb0      finish
+  0xb0      finish
+
+0xcce8: @0xe034
+  Personality routine: 0x97ac
+
+0xd6b4: 0x80b108ab
+  Compact model 0
+  0xb1 0x08 pop {r3}
+  0xab      pop {r4, r5, r6, r7r14}
+
+0xd754: @0xe154
+  Personality routine: 0x97ac
+
+0xd7c8: @0xe168
+  Personality routine: 0x97ac
+
+0xd800: @0xe180
+  Personality routine: 0x97ac
+
+0xd8a8: 0x80b0b0b0
+  Compact model 0
+  0xb0      finish
+  0xb0      finish
+  0xb0      finish
+
+0xd8ac: 0x80aeb0b0
+  Compact model 0
+  0xae      pop {r4, r5, r6, r7, r8, r9, r10r14}
+  0xb0      finish
+  0xb0      finish
+
+0xd978: 0x1 [cantunwind]
+
+
+Symbol table '.dynsym' contains 83 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00009578     0 FUNC    GLOBAL DEFAULT  UND iw_extract_event_stream
+     2: 00009584     0 FUNC    GLOBAL DEFAULT  UND __aeabi_atexit@CXXABI_ARM_1.3.3 (2)
+     3: 00009590     0 FUNC    GLOBAL DEFAULT  UND iw_get_stats
+     4: 000164e0    16 OBJECT  WEAK   DEFAULT   23 _ZTVSt9basic_iosIcSt11cha@GLIBCXX_3.4 (3)
+     5: 0000959c     0 FUNC    GLOBAL DEFAULT  UND _ZNKSs7compareEPKc@GLIBCXX_3.4 (3)
+     6: 000095a8     0 FUNC    GLOBAL DEFAULT  UND _ZN9__gnu_cxx18__exchange@GLIBCXX_3.4 (3)
+     7: 000164dc     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+     8: 000164f0    16 OBJECT  WEAK   DEFAULT   23 _ZNSs4_Rep20_S_empty_rep_@GLIBCXX_3.4 (3)
+     9: 000095b4     0 FUNC    GLOBAL DEFAULT  UND free@GLIBC_2.4 (4)
+    10: 000095c0     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_baseC2Ev@GLIBCXX_3.4 (3)
+    11: 000095cc     0 FUNC    GLOBAL DEFAULT  UND iw_sockets_open
+    12: 000095d8     0 FUNC    GLOBAL DEFAULT  UND _ZNSt8ios_baseD2Ev@GLIBCXX_3.4 (3)
+    13: 000095e4     0 FUNC    GLOBAL DEFAULT  UND iw_init_event_stream
+    14: 000095f0     0 FUNC    GLOBAL DEFAULT  UND _ZNSs6assignEPKcj@GLIBCXX_3.4 (3)
+    15: 00016500    16 OBJECT  WEAK   DEFAULT   23 _ZTTSt19basic_ostringstre@GLIBCXX_3.4 (3)
+    16: 000095fc     0 FUNC    GLOBAL DEFAULT  UND exit@GLIBC_2.4 (4)
+    17: 00009608     0 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.4 (4)
+    18: 00016864     0 NOTYPE  GLOBAL DEFAULT  ABS __end__
+    19: 00009614     0 FUNC    GLOBAL DEFAULT  UND puts@GLIBC_2.4 (4)
+    20: 00009620     0 FUNC    GLOBAL DEFAULT  UND _ZNSsC1ERKSs@GLIBCXX_3.4 (3)
+    21: 0000962c     0 FUNC    GLOBAL DEFAULT  UND __aeabi_f2d@GCC_3.5 (5)
+    22: 00016510    64 OBJECT  WEAK   DEFAULT   23 _ZTVSt15basic_streambufIc@GLIBCXX_3.4 (3)
+    23: 00009638     0 FUNC    GLOBAL DEFAULT  UND memset@GLIBC_2.4 (4)
+    24: 00009644     0 FUNC    GLOBAL DEFAULT  UND _ZSt19__throw_logic_error@GLIBCXX_3.4 (3)
+    25: 0000d978     0 FUNC    GLOBAL DEFAULT   13 _fini
+    26: 00009650     0 FUNC    GLOBAL DEFAULT  UND _ZNKSt15basic_stringbufIc@GLIBCXX_3.4 (3)
+    27: 0000965c     0 FUNC    GLOBAL DEFAULT  UND _ZNSs7reserveEj@GLIBCXX_3.4 (3)
+    28: 00016864     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end__
+    29: 0000d754   116 FUNC    WEAK   DEFAULT   12 _ZStplIcSt11char_traitsIc
+    30: 00009668     0 FUNC    GLOBAL DEFAULT  UND _ZNSs4_Rep10_M_destroyERK@GLIBCXX_3.4 (3)
+    31: 00009674     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4 (4)
+    32: 0000d800   168 FUNC    WEAK   DEFAULT   12 _ZNSt15basic_stringbufIcS
+    33: 00016864     0 NOTYPE  GLOBAL DEFAULT  ABS _bss_end__
+    34: 00009680     0 FUNC    GLOBAL DEFAULT  UND iw_print_bitrate
+    35: 0000968c     0 FUNC    GLOBAL DEFAULT  UND ioctl@GLIBC_2.4 (4)
+    36: 00009698     0 FUNC    GLOBAL DEFAULT  UND system@GLIBC_2.4 (6)
+    37: 000096a4     0 FUNC    GLOBAL DEFAULT  UND _ZNSsC1ERKSsjj@GLIBCXX_3.4 (3)
+    38: 000096b0     0 FUNC    GLOBAL DEFAULT  UND open@GLIBC_2.4 (6)
+    39: 000096bc     0 FUNC    GLOBAL DEFAULT  UND _ZNSs6appendERKSs@GLIBCXX_3.4 (3)
+    40: 00009558     0 FUNC    GLOBAL DEFAULT   10 _init
+    41: 000096c8     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_cleanup@CXXABI_1.3 (7)
+    42: 000096d4     0 FUNC    GLOBAL DEFAULT  UND fork@GLIBC_2.4 (6)
+    43: 000096e0     0 FUNC    GLOBAL DEFAULT  UND _ZNSs6appendEPKcj@GLIBCXX_3.4 (3)
+    44: 000096ec     0 FUNC    GLOBAL DEFAULT  UND _ZNSsC1EPKcRKSaIcE@GLIBCXX_3.4 (3)
+    45: 00016550    40 OBJECT  WEAK   DEFAULT   23 _ZTVSt19basic_ostringstre@GLIBCXX_3.4 (3)
+    46: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _Jv_RegisterClasses
+    47: 000096f8     0 FUNC    GLOBAL DEFAULT  UND __aeabi_fcmpeq@GCC_3.5 (5)
+    48: 00009704     0 FUNC    GLOBAL DEFAULT  UND _ZNSs6assignERKSs@GLIBCXX_3.4 (3)
+    49: 00000000     0 FUNC    WEAK   DEFAULT  UND pthread_cancel@GLIBC_2.4 (6)
+    50: 000164dc     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start__
+    51: 0000971c     0 FUNC    GLOBAL DEFAULT  UND _ZNSt9basic_iosIcSt11char@GLIBCXX_3.4 (3)
+    52: 00009728     0 FUNC    GLOBAL DEFAULT  UND iw_get_range_info
+    53: 000164c8     0 NOTYPE  GLOBAL DEFAULT   22 __data_start
+    54: 00016864     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+    55: 00009734     0 FUNC    GLOBAL DEFAULT  UND ether_ntoa_r@GLIBC_2.4 (4)
+    56: 00009740     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6localeD1Ev@GLIBCXX_3.4 (3)
+    57: 0000974c     0 FUNC    GLOBAL DEFAULT  UND _ZNSs6assignEPKc@GLIBCXX_3.4 (3)
+    58: 00009758     0 FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_2.4 (4)
+    59: 000164dc     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    60: 00016578    64 OBJECT  WEAK   DEFAULT   23 _ZTVSt15basic_stringbufIc@GLIBCXX_3.4 (3)
+    61: 00009764     0 FUNC    GLOBAL DEFAULT  UND malloc@GLIBC_2.4 (4)
+    62: 00009770     0 FUNC    GLOBAL DEFAULT  UND strlen@GLIBC_2.4 (4)
+    63: 0000977c     0 FUNC    GLOBAL DEFAULT  UND usleep@GLIBC_2.4 (4)
+    64: 00009788     0 FUNC    GLOBAL DEFAULT  UND _ZNSsD1Ev@GLIBCXX_3.4 (3)
+    65: 00009794     0 FUNC    GLOBAL DEFAULT  UND _ZNSs4_Rep9_S_createEjjRK@GLIBCXX_3.4 (3)
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_unwind_cpp_pr1@GCC_3.5 (5)
+    67: 000097a0     0 FUNC    GLOBAL DEFAULT  UND _ZNSo9_M_insertIdEERSoT_@GLIBCXX_3.4.9 (8)
+    68: 000097ac     0 FUNC    GLOBAL DEFAULT  UND __gxx_personality_v0@CXXABI_1.3 (7)
+    69: 000097b8     0 FUNC    GLOBAL DEFAULT  UND _ZNSolsEi@GLIBCXX_3.4 (3)
+    70: 000097c4     0 FUNC    GLOBAL DEFAULT  UND __errno_location@GLIBC_2.4 (6)
+    71: 000097d0     0 FUNC    GLOBAL DEFAULT  UND strncpy@GLIBC_2.4 (4)
+    72: 000097dc     0 FUNC    GLOBAL DEFAULT  UND memcmp@GLIBC_2.4 (4)
+    73: 000097e8     0 FUNC    GLOBAL DEFAULT  UND _ZNSt9basic_iosIcSt11char@GLIBCXX_3.4 (3)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND __aeabi_unwind_cpp_pr0@GCC_3.5 (5)
+    75: 0000d7c8    56 FUNC    WEAK   DEFAULT   12 _ZStplIcSt11char_traitsIc
+    76: 000097f4     0 FUNC    GLOBAL DEFAULT  UND getenv@GLIBC_2.4 (4)
+    77: 00009800     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.4 (4)
+    78: 0000980c     0 FUNC    GLOBAL DEFAULT  UND _ZNKSs4findEcj@GLIBCXX_3.4 (3)
+    79: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    80: 00009824     0 FUNC    GLOBAL DEFAULT  UND _ZNSt19basic_ostringstrea@GLIBCXX_3.4 (3)
+    81: 00009830     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6localeC1Ev@GLIBCXX_3.4 (3)
+    82: 0000983c     0 FUNC    GLOBAL DEFAULT  UND _ZNSt15basic_streambufIcS@GLIBCXX_3.4 (3)
+
+Histogram for bucket list length (total of 150 buckets):
+ Length  Number     % of total  Coverage
+      0  83         ( 55.3%)
+      1  52         ( 34.7%)     63.4%
+      2  15         ( 10.0%)    100.0%
+
+Version symbols section '.gnu.version' contains 83 entries:
+ Addr: 00000000000091ea  Offset: 0x0011ea  Link: 4 (.dynsym)
+  000:   0 (*local*)       0 (*local*)       2 (CXXABI_ARM_1.3.3)      0 (*local*)    
+  004:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   1 (*global*)   
+  008:   3 (GLIBCXX_3.4)   4 (GLIBC_2.4)     3 (GLIBCXX_3.4)   0 (*local*)    
+  00c:   3 (GLIBCXX_3.4)   0 (*local*)       3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)
+  010:   4 (GLIBC_2.4)     4 (GLIBC_2.4)     1 (*global*)      4 (GLIBC_2.4)  
+  014:   3 (GLIBCXX_3.4)   5 (GCC_3.5)       3 (GLIBCXX_3.4)   4 (GLIBC_2.4)  
+  018:   3 (GLIBCXX_3.4)   1 (*global*)      3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)
+  01c:   1 (*global*)      1 (*global*)      3 (GLIBCXX_3.4)   4 (GLIBC_2.4)  
+  020:   1 (*global*)      1 (*global*)      0 (*local*)       4 (GLIBC_2.4)  
+  024:   6 (GLIBC_2.4)     3 (GLIBCXX_3.4)   6 (GLIBC_2.4)     3 (GLIBCXX_3.4)
+  028:   1 (*global*)      7 (CXXABI_1.3)    6 (GLIBC_2.4)     3 (GLIBCXX_3.4)
+  02c:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   0 (*local*)       5 (GCC_3.5)    
+  030:   3 (GLIBCXX_3.4)   6 (GLIBC_2.4)     1 (*global*)      3 (GLIBCXX_3.4)
+  034:   0 (*local*)       1 (*global*)      1 (*global*)      4 (GLIBC_2.4)  
+  038:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   4 (GLIBC_2.4)     1 (*global*)   
+  03c:   3 (GLIBCXX_3.4)   4 (GLIBC_2.4)     4 (GLIBC_2.4)     4 (GLIBC_2.4)  
+  040:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   5 (GCC_3.5)       8 (GLIBCXX_3.4.9)
+  044:   7 (CXXABI_1.3)    3 (GLIBCXX_3.4)   6 (GLIBC_2.4)     4 (GLIBC_2.4)  
+  048:   4 (GLIBC_2.4)     3 (GLIBCXX_3.4)   5 (GCC_3.5)       1 (*global*)   
+  04c:   4 (GLIBC_2.4)     4 (GLIBC_2.4)     3 (GLIBCXX_3.4)   0 (*local*)    
+  050:   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)   3 (GLIBCXX_3.4)
+
+Version needs section '.gnu.version_r' contains 4 entries:
+ Addr: 0x0000000000009290  Offset: 0x001290  Link: 5 (.dynstr)
+  000000: Version: 1  File: libpthread.so.0  Cnt: 1
+  0x0010:   Name: GLIBC_2.4  Flags: none  Version: 6
+  0x0020: Version: 1  File: libgcc_s.so.1  Cnt: 1
+  0x0030:   Name: GCC_3.5  Flags: none  Version: 5
+  0x0040: Version: 1  File: libc.so.6  Cnt: 1
+  0x0050:   Name: GLIBC_2.4  Flags: none  Version: 4
+  0x0060: Version: 1  File: libstdc++.so.6  Cnt: 4
+  0x0070:   Name: GLIBCXX_3.4.9  Flags: none  Version: 8
+  0x0080:   Name: CXXABI_1.3  Flags: none  Version: 7
+  0x0090:   Name: GLIBCXX_3.4  Flags: none  Version: 3
+  0x00a0:   Name: CXXABI_ARM_1.3.3  Flags: none  Version: 2
+
+Notes at offset 0x00000148 with length 0x00000020:
+  Owner                 Data size	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 2.6.16
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "5TE"
+  Tag_CPU_arch: v5TE
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-1
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_align_preserved: 8-byte, except leaf SP
+  Tag_ABI_enum_size: int
+  Tag_DIV_use: Not allowed
