@@ -1,0 +1,28 @@
+files extracted from Kobo Touch by Rakuten
+
+cmdline.txt
+	cat /proc/cmdline
+
+config.txt
+	zcat /proc/config.gz
+
+cpuinfo.txt
+	cat /proc/cpuinfo
+
+dmesg.txt
+	dmesg
+
+fickel-readelf-a.txt
+	arm-none-linux-gnueabi-readelf -a /usr/local/Kobo/fickel
+
+meminfo.txt
+	cat /proc/meminfo
+
+nickel-readelf-a.txt
+	arm-none-linux-gnueabi-readelf -a /usr/local/Kobo/fickel
+
+rcS.txt
+	cat /etc/init.d/rcS
+
+uname-a.txt
+	uname -a
